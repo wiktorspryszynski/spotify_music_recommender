@@ -1,5 +1,4 @@
 import json
-import django.urls
 from dotenv import load_dotenv
 import os
 import base64
@@ -70,17 +69,27 @@ def get_songs_by_artist(token, artist_id):
     return json_result["tracks"]
 
 
-def get_songs_names_list_by_artist(token, artist_id):
-    res = get_songs_by_artist(token, artist_id)
-    # to be finished
+'''
+long_term: last ~1 year of music data
+medium_term: last ~6 months
+short_term: last ~4 weeks
 
+type = ["artists", "tracks"], "tracks" by default
+'''
+def get_current_users_top_songs(token, type="tracks"):
+    url = f"https://api.spotify.com/v1/me/top/{type}"
+    headers = get_auth_header(token)
 
-if __name__ == '__main__':
-    token = get_token()
+    result = get(url=url, headers=headers)
+    json_result = json.loads(result.content)
 
-    trav_id = get_artist_id(token, "Travis scott")
-    songs = get_songs_by_artist(token, trav_id)
+    if len(json_result) == 0:
+        print("No user's top tracks found")
+        return None
+    return json_result
 
-    for x in songs:
-        print(x["album"])
-        print('\n\n')
+# if __name__ == '__main__':
+#     token = get_token()
+#     top_tracks = get_artist_id(token, "Travis Scott")
+    
+#     print(top_tracks)    

@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    background-color: #070807;
+}
+
+button {
+    background-color: #070807; /* Green background color */
+    color: rgb(30, 215, 96); /* White text color */
+    padding: 15px 30px; /* Padding around text */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    font-size: 24px; /* Font size */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+button>img {
+    transform: translate(0px, 7px);
+}
+
+button:hover {
+    background-color: #1c251d; /* Darker green on hover */
+}

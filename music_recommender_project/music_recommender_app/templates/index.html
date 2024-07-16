@@ -1,36 +1,15 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Track list</title>
+        <link rel="stylesheet" href="{% static 'index_styles.css' %}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
     </head>
     <body>
-        <p style="font-size: 34px;">
-            WHAT TO DO<br>
-            logowanie spotify<br>
-            baza danych?<br>
-            machine learning podpowiadanie<br>
-            wyszukiwanie top trackow artystow przez wpisanie imienia<br>
-            wyszukiwanie twoich top trackow po zalogowaniu<br>
-
-
-
-            <ul>
-            {% for song in songs %}
-                <li style="font-size: 24px;">
-                    <a href={{ song.external_urls.spotify }}>
-                        {{ song.name }} -
-                        {% for artist in song.artists%}
-                            {{ artist.name }},
-                        {% endfor %}
-                        <br>
-                        <img src={{ song.album.images.0.url }}>
-                    </a>
-                    <br/>
-                </li>
-            {% endfor %}
-            </ul>
-        </p>
-        
+        <a href="/music_recommender_app/spotify/login/">
+            <button type="button">Zaloguj się przy użyciu <img src="{% static 'Spotify_logo_big.png' %}" alt="Spotify" height="30px"></button>
+        </a>
     </body>
 </html>

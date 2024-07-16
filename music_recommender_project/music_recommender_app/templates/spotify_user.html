@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify User Profile</title>
+        <link rel="stylesheet" href="{% static 'track_list_styles.css' %}">
+    </head>
+    <body>
+        <div class="welcome-user">
+            <h1>
+                Witaj, <a href="{{user_profile.external_urls.spotify}}">{{ user_profile.display_name }}!<img src="{{ user_profile.images.0.url }}"></a>
+            </h1>
+        </div>
+        
+        <div class="tracks-list">
+            <p>Twoje ulubione piosenki</p>
+            {% for song in user_top_tracks.items %}
+                <a href={{ song.external_urls.spotify }} target="_blank">
+                    <div class="track-container">
+                        <img src="{{ song.album.images.0.url }}" alt="Track Image" class="track-image">
+                        <br><br>
+                        <div class="track-info">
+                            <div class="track-name">{{ song.name }}</div>
+                            <div class="track-artist">
+                                {% for artist in song.artists %}
+                                    {{ artist.name }}&nbsp;&nbsp;
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div> 
+    </body>
+</html>

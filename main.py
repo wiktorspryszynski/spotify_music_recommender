@@ -70,11 +70,6 @@ def get_songs_by_artist(token, artist_id):
     return json_result["tracks"]
 
 
-def get_songs_names_list_by_artist(token, artist_id):
-    res = get_songs_by_artist(token, artist_id)
-    # to be finished
-
-
 if __name__ == '__main__':
     token = get_token()
 

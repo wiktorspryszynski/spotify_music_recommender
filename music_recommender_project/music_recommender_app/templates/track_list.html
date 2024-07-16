@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Track list</title>
+        <link rel="stylesheet" href="{% static 'track_list_styles.css' %}">
+    </head>
+    <body>
+        <p style="font-size: 34px;">
+            WHAT TO DO<br>
+            logowanie spotify<br>
+            baza danych?<br>
+            machine learning podpowiadanie<br>
+            wyszukiwanie top trackow artystow przez wpisanie imienia<br>
+            wyszukiwanie twoich top trackow po zalogowaniu<br>
+            podstrona z informacjami danej piosenki + dane z pliku csv (dancability, etc.. + error jesli nie wyszuka piosenki)<br>
+        </p>
+
+        
+        <div class="tracks-list">
+            {% for song in songs %}
+                <a href={{ song.external_urls.spotify }} target="_blank">
+                    <div class="track-container">
+                        <img src="{{ song.album.images.0.url }}" alt="Track Image" class="track-image">
+                        <div class="track-info">
+                            <div class="track-name">{{ song.name }}</div>
+                            <div class="track-artist">
+                                {% for artist in song.artists%}
+                                    {{ artist.name }},
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+        </div>
+    </body>
+</html>
