@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <p style="font-size: 34px;">
+            WHAT TO DO<br>
+            logowanie spotify<br>
+            baza danych?<br>
+            machine learning podpowiadanie<br>
+            wyszukiwanie top trackow artystow przez wpisanie imienia<br>
+            wyszukiwanie twoich top trackow po zalogowaniu<br>
+
+
+
+            <ul>
+            {% for song in songs %}
+                <li style="font-size: 24px;">
+                    <a href={{ song.external_urls.spotify }}>
+                        {{ song.name }} -
+                        {% for artist in song.artists%}
+                            {{ artist.name }},
+                        {% endfor %}
+                        <br>
+                        <img src={{ song.album.images.0.url }}>
+                    </a>
+                    <br/>
+                </li>
+            {% endfor %}
+            </ul>
+        </p>
+        
+    </body>
+</html>
