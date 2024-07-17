@@ -34,14 +34,14 @@ def spotify_callback(request):
         access_token = token_info['access_token']
         sp = spotipy.Spotify(auth=access_token)
         user_profile = sp.current_user()
-        user_top_tracks = sp.current_user_top_tracks(time_range="long_term")
+        user_top_tracks = sp.current_user_top_tracks(limit=50, time_range="long_term")
+        user_saved_tracks = sp.current_user_saved_tracks(limit=50)
         #user_top_tracks = spotify_functions.get_current_users_top_songs(token=access_token, type="tracks")
         context = {
             'user_profile': user_profile,
+            'user_saved_tracks': user_saved_tracks,
             'user_top_tracks': user_top_tracks
             }
-
-        print(f'\n\n{user_top_tracks}')
         return render(request, 'spotify_user.html', context)
     else:
         return redirect('spotify_login')

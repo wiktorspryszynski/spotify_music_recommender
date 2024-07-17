@@ -2,20 +2,79 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
-    margin: 0;
+    flex-direction: column;
+    height: 100vh;
     background-color: #070807;
+    color: white;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-button {
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.text-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.text-block {
+    flex: 1;
+    margin: 0 10px;
+    text-align: justify;
+}
+
+.main-button {
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+
     background-color: #070807; /* Green background color */
     color: rgb(30, 215, 96); /* White text color */
     padding: 15px 30px; /* Padding around text */
     border: none; /* No border */
     border-radius: 20px; /* Rounded corners */
     font-size: 24px; /* Font size */
-    cursor: pointer; /* Cursor style */
     transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.main-button>img {
+    transform: translate(0px, 7px);
+}
+
+.main-button:hover {
+    background-color: #1c251d; /* Darker green on hover */
+}
+
+
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #070807;
+    color: white;
+}
+
+button {
+    background-color: #070807;
+    color: rgb(30, 215, 96);
+    padding: 15px 30px; 
+    border: none;
+    border-radius: 20px; 
+    font-size: 24px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button>img {
@@ -23,5 +82,5 @@ button>img {
 }
 
 button:hover {
-    background-color: #1c251d; /* Darker green on hover */
-}
+    background-color: #1c251d;
+} */

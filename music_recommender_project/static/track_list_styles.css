@@ -11,6 +11,14 @@ body {
     background-color: #0f0c0c;
 }
 
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items at the start of the container */
+    width: 100%; /* Ensure the parent div takes up the full width */
+}
+
 a {
     text-decoration: none;
 }
@@ -25,6 +33,12 @@ a {
 
 .welcome-user>h1>a {
     color: #1db954;
+    /* transition into lighter color on hover */
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
 }
 
 .welcome-user>h1>a:hover {
@@ -36,10 +50,12 @@ a {
     height: 35px;
     width: 35px;
 }
-
 .tracks-list {
-    margin: 100px;
-    border-radius: 25%;
+    flex: 1; /* Each .tracks-list class div takes up equal space */
+    margin: 0 10px; /* Optional: Add some margin between the lists */
+    overflow: auto; /* Allow scrolling if the content overflows */
+    /* margin: 100px; */
+    /* border-radius: 25%; */
     width: 45%;
 }
 
@@ -57,6 +73,11 @@ a {
     border-radius: 8px;
     background-color: #0f0c0c;
     
+    -o-transition:.25s;
+    -ms-transition:.25s;
+    -moz-transition:.25s;
+    -webkit-transition:.25s;
+    transition:.25s;
 }
 
 .track-container:hover {

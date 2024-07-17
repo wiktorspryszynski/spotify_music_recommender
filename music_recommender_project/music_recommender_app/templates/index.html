@@ -8,8 +8,27 @@
         <title>Document</title>
     </head>
     <body>
-        <a href="/music_recommender_app/spotify/login/">
-            <button type="button">Zaloguj się przy użyciu <img src="{% static 'Spotify_logo_big.png' %}" alt="Spotify" height="30px"></button>
-        </a>
+        <div class="container">
+            <div class="text-row">
+                <div class="text-block" id="polish">
+                    <h3>Aplikacja do polecania muzyki</h3>
+                    <p>projekt mający na celu polecanie piosenek w oparciu o Twoje dane z Spotify</br>
+                    aplikacja ma dostęp do Twoich najbardziej słuchanych i zapisanych piosenek</br>
+                    na ich podstawie, przy pomocy uczenia maszynowego, alogrytm zwraca (play)listę polecanych utworów</p>
+                </div>
+
+                <div class="text-block" id="english">
+                    <h3>Music recommender app</h3>
+                    <p>a project to recommend songs based on your Spotify data</br>
+                    the application has access to your saved and most listened to songs</br>
+                    based on them, using machine learning, the algorithm returns a (play)list of recommended songs</p>
+                </div>
+            </div>
+            
+
+            <a class="main-button" href="/music_recommender_app/spotify/login/">
+                Zaloguj się przy użyciu <img src="{% static 'Spotify_logo_big.png' %}" alt="Spotify" height="35px">
+            </a>
+        </div>
     </body>
 </html>

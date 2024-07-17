@@ -10,28 +10,60 @@
     <body>
         <div class="welcome-user">
             <h1>
-                Witaj, <a href="{{user_profile.external_urls.spotify}}">{{ user_profile.display_name }}!<img src="{{ user_profile.images.0.url }}"></a>
+                Cześć, <a href="{{user_profile.external_urls.spotify}}">{{ user_profile.display_name }}!<img src="{{ user_profile.images.0.url }}"></a>
             </h1>
         </div>
-        
-        <div class="tracks-list">
-            <p>Twoje ulubione piosenki</p>
-            {% for song in user_top_tracks.items %}
-                <a href={{ song.external_urls.spotify }} target="_blank">
-                    <div class="track-container">
-                        <img src="{{ song.album.images.0.url }}" alt="Track Image" class="track-image">
-                        <br><br>
-                        <div class="track-info">
-                            <div class="track-name">{{ song.name }}</div>
-                            <div class="track-artist">
-                                {% for artist in song.artists %}
-                                    {{ artist.name }}&nbsp;&nbsp;
-                                {% endfor %}
+
+        <p style="font-size: 34px; margin-left: 50px;">
+            WHAT TO DO<br>
+            <ul style="margin-left: 50px;">
+                <li>plik csv -> baza danych</li>
+                <li>machine learning podpowiadanie</li>
+                <li>wyszukiwanie top trackow artystow przez wpisanie imienia</li>
+                <li>podstrona z informacjami danej piosenki + dane z pliku csv (dancability, etc.. + error jesli nie wyszuka piosenki)</li>
+            </ul>
+        </p>
+
+
+        <div class="main">
+            <div id="saved" class="tracks-list">
+                <p>Twoje zapisane piosenki</p>
+                {% for song in user_saved_tracks.items %}
+                    <a href={{ song.track.external_urls.spotify }} target="_blank">
+                        <div class="track-container">
+                            <img src="{{ song.track.album.images.0.url }}" alt="Track Image" class="track-image">
+                            <br><br>
+                            <div class="track-info">
+                                <div class="track-name">{{ song.track.name }}</div>
+                                <div class="track-artist">
+                                    {% for artist in song.track.artists %}
+                                        {{ artist.name }}&nbsp;&nbsp;
+                                    {% endfor %}
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            {% endfor %}
-        </div> 
+                    </a>
+                {% endfor %}
+            </div>
+            <div id="top" class="tracks-list">
+                <p>Twoje ulubione piosenki</p>
+                {% for song in user_top_tracks.items %}
+                    <a href={{ song.external_urls.spotify }} target="_blank">
+                        <div class="track-container">
+                            <img src="{{ song.album.images.0.url }}" alt="Track Image" class="track-image">
+                            <br><br>
+                            <div class="track-info">
+                                <div class="track-name">{{ song.name }}</div>
+                                <div class="track-artist">
+                                    {% for artist in song.artists %}
+                                        {{ artist.name }}&nbsp;&nbsp;
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
     </body>
 </html>
