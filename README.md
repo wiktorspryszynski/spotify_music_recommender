@@ -8,21 +8,21 @@ In the future there might also appear a little section with analysis of your mus
 
 ## To run:
 Make sure to have Python installed on your system, then type the following:
-'''
+```
 pip install django
 pip install spotipy
 
 python manage.py runserver
-'''
+```
 
 
 ## Technologies used
 
--Python
-    -Django
-    -Spotipy
+- Python
+    - Django
+    - Spotipy
     
--Hopefully in the future
-    -Pyspark 
-    -TensorFlow
-    -Docker 
+- Hopefully in the future
+    - Pyspark 
+    - TensorFlow
+    - Docker 
