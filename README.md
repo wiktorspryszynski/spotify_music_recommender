@@ -19,10 +19,10 @@ python manage.py runserver
 ## Technologies used
 
 Python
-    -Django
-    -Spotipy
+-Django
+-Spotipy
     
 Hopefully in the future
-    -Pyspark 
-    -TensorFlow
-    -Docker 
+-Pyspark 
+-TensorFlow
+-Docker 
