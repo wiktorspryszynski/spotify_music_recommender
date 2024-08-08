@@ -54,8 +54,6 @@ a {
     flex: 1; /* Each .tracks-list class div takes up equal space */
     margin: 0 10px; /* Optional: Add some margin between the lists */
     overflow: auto; /* Allow scrolling if the content overflows */
-    /* margin: 100px; */
-    /* border-radius: 25%; */
     width: 45%;
 }
 
@@ -110,4 +108,31 @@ a {
 .track-artist {
     font-size: 14px;
     color: #666;
+}
+
+#recommended_songs_list {
+    width: 100vw;
+}
+
+/* fixed button at the bottom of the page redirects to list of recommended songs */
+.fixed-button {
+    position: fixed;
+    bottom: 20px;
+    right: 44vw;
+    background-color: #28a745; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    z-index: 1000; /* Ensures the button is on top of other content */    
+}
+
+.fixed-button:hover {
+    background-color: #218838; /* Darker green on hover */
 }
