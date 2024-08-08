@@ -117,7 +117,6 @@ def recommended_songs_site(request):
                     if track_id in audio_features_map:
                         audio = audio_features_map[track_id]
                         
-                        f.write(f'{i}.\n')
                         f.write(f'name: {song["track"]["name"] if "track" in song else song["name"]}\n')
                         f.write('artists: ')
                         artists = song['track']['artists'] if 'track' in song else song['artists']
