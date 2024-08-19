@@ -10,8 +10,7 @@ from requests import post, get
 load_dotenv()
 
 client_id = os.getenv("CLIENT_ID")
-client_secret = os.getenv("CLIENT_SECRET")
-
+client_secret = os.getenv("CLIENT_SECRET") 
 
 def get_token():
     auth_token = client_id + ":" + client_secret
@@ -31,7 +30,20 @@ def get_token():
 
 
 def get_auth_header(token):
+    print(token)
     return {"Authorization": "Bearer " + token}
+
+def current_users_profile(token):
+    url = 'https://api.spotify.com/v1/me'
+    headers = get_auth_header(token)
+    
+    result = get(url=url, headers=headers)
+    json_result = json.loads(result.content)
+
+    if len(json_result) == 0:
+        print("User not found")
+        return None
+    return json_result
 
 
 def get_artist_info(token, artist_name):
@@ -74,7 +86,8 @@ long_term: last ~1 year of music data
 medium_term: last ~6 months
 short_term: last ~4 weeks
 
-type = ["artists", "tracks"], "tracks" by default
+type = ["artists", "tracks"], 
+type = "tracks" by default
 '''
 def get_current_users_top_songs(token, type="tracks"):
     url = f"https://api.spotify.com/v1/me/top/{type}"
@@ -88,8 +101,7 @@ def get_current_users_top_songs(token, type="tracks"):
         return None
     return json_result
 
-# if __name__ == '__main__':
-#     token = get_token()
-#     top_tracks = get_artist_id(token, "Travis Scott")
-    
-#     print(top_tracks)    
+if __name__ == '__main__':
+    token = get_token()
+    u = current_users_profile(token)
+    print(u)
