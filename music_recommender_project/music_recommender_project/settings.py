@@ -17,9 +17,9 @@ import os
 
 load_dotenv()
 
-SPOTIPY_CLIENT_ID = os.getenv("CLIENT_ID")
-SPOTIPY_CLIENT_SECRET = os.getenv("CLIENT_SECRET")
-SPOTIPY_REDIRECT_URI = 'http://127.0.0.1:8000/music_recommender_app/spotify/callback/'
+SPOTIFY_CLIENT_ID = os.getenv("CLIENT_ID")
+SPOTIFY_CLIENT_SECRET = os.getenv("CLIENT_SECRET")
+SPOTIFY_REDIRECT_URI = 'http://127.0.0.1:8000/music_recommender_app/spotify/callback/'
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.

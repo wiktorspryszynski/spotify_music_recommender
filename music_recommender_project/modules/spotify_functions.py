@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 import os
 import base64
 from requests import post, get
+from urllib.parse import urlparse
 
 # import spotipy
 
@@ -30,7 +31,6 @@ def get_token():
 
 
 def get_auth_header(token):
-    print(token)
     return {"Authorization": "Bearer " + token}
 
 def current_users_profile(token):
@@ -81,16 +81,15 @@ def get_songs_by_artist(token, artist_id):
     return json_result["tracks"]
 
 
-'''
-long_term: last ~1 year of music data
-medium_term: last ~6 months
-short_term: last ~4 weeks
-
-type = ["artists", "tracks"], 
-type = "tracks" by default
-'''
-def get_current_users_top_songs(token, type="tracks"):
-    url = f"https://api.spotify.com/v1/me/top/{type}"
+def get_current_users_top_tracks(token, limit:int = 20, time_range:str = "medium_term"):
+    '''
+    :param limit: max items to return (range = 0 - 50, default = 20)
+    :param time_range:
+        long_term = last ~1 year of music data\n
+        medium_term = last ~6 months\n
+        short_term = last ~4 weeks\n
+    '''
+    url = f"https://api.spotify.com/v1/me/top/tracks?time_range={time_range}&limit={limit}"
     headers = get_auth_header(token)
 
     result = get(url=url, headers=headers)
@@ -101,7 +100,69 @@ def get_current_users_top_songs(token, type="tracks"):
         return None
     return json_result
 
-if __name__ == '__main__':
-    token = get_token()
-    u = current_users_profile(token)
-    print(u)
+def get_current_users_saved_songs(token, limit:int = 20, offset:int = 0, market:str = ""):
+    '''
+    :param limit: max items to return (range = 0 - 50, default = 20)
+    :param offset: index of 1st item, can use with limit to return next set of tracks (default = 0)
+    :param market: (None by default) - An ISO 3166-1 alpha-2 country code, if specified, only returns track if available in that market (default None)
+    https://developer.spotify.com/documentation/web-api/reference/get-users-saved-tracks
+    '''
+    url = f"https://api.spotify.com/v1/me/tracks/?limit={limit}&offset={offset}"
+    headers = get_auth_header(token)
+    
+    if market != "":
+        url = f'?market={market}'
+    
+    result = get(url=url, headers=headers)
+    # if result.status_code == 404:
+    #     print("result status 404")
+    #     return None
+    
+    json_result = json.loads(result.content)
+
+    if len(json_result) == 0:
+        print("No user's top tracks found")
+        return None
+    return json_result
+
+def get_current_users_top_artists(token, limit:int = 20, time_range:str = "medium_term"):
+    '''
+    :param limit: max items to return (range = 0 - 50, default = 20)
+    :param time_range:
+        long_term = last ~1 year of music data\n
+        medium_term = last ~6 months\n
+        short_term = last ~4 weeks\n
+    '''
+    url = f"https://api.spotify.com/v1/me/top/artists/?time_range={time_range}&limit={limit}"
+    headers = get_auth_header(token)
+
+    result = get(url=url, headers=headers)
+    json_result = json.loads(result.content)
+
+    if len(json_result) == 0:
+        print("No user's top artists found")
+        return None
+    return json_result
+
+def get_songs_audio_features(token, track_list: list[str]):
+    """
+    Get several songs audio features, up to a 100 at a time\n
+    Spotify's API also supplies an endpoint to get one song's audio feature
+
+    Args:
+        track_list (list[str]): list of ID's of songs to get audio features of
+    """
+    ids = '%2'.join(track_list)
+    uri = 'https://api.spotify.com/v1/audio-features/{ids}'
+    headers = get_auth_header(token)
+
+    result = get(url=url, headers=headers)
+    json_result = json.loads(result.content)
+
+    if len(json_result) == 0:
+        print("No user's top artists found")
+        return None
+    return json_result
+
+def get_artist_by_id(token, artists_id: str):
+    pass
