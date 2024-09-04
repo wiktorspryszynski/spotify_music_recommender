@@ -81,7 +81,7 @@ def get_songs_by_artist(token, artist_id):
     return json_result["tracks"]
 
 
-def get_current_users_top_tracks(token, limit:int = 20, time_range:str = "medium_term"):
+def get_current_users_top_tracks(token, limit: int = 20, time_range: str = "medium_term"):
     '''
     :param limit: max items to return (range = 0 - 50, default = 20)
     :param time_range:
@@ -100,7 +100,7 @@ def get_current_users_top_tracks(token, limit:int = 20, time_range:str = "medium
         return None
     return json_result
 
-def get_current_users_saved_songs(token, limit:int = 20, offset:int = 0, market:str = ""):
+def get_current_users_saved_songs(token, limit: int = 20, offset: int = 0, market: str = ""):
     '''
     :param limit: max items to return (range = 0 - 50, default = 20)
     :param offset: index of 1st item, can use with limit to return next set of tracks (default = 0)
@@ -125,7 +125,7 @@ def get_current_users_saved_songs(token, limit:int = 20, offset:int = 0, market:
         return None
     return json_result
 
-def get_current_users_top_artists(token, limit:int = 20, time_range:str = "medium_term"):
+def get_current_users_top_artists(token, limit: int = 20, time_range: str = "medium_term"):
     '''
     :param limit: max items to return (range = 0 - 50, default = 20)
     :param time_range:
@@ -147,22 +147,27 @@ def get_current_users_top_artists(token, limit:int = 20, time_range:str = "mediu
 def get_songs_audio_features(token, track_list: list[str]):
     """
     Get several songs audio features, up to a 100 at a time\n
-    Spotify's API also supplies an endpoint to get one song's audio feature
 
-    Args:
-        track_list (list[str]): list of ID's of songs to get audio features of
+        :param track_list: list of ID's of songs to get audio features of
     """
-    ids = '%2'.join(track_list)
-    uri = 'https://api.spotify.com/v1/audio-features/{ids}'
+    ids = '%2C'.join(track_list) # '%2C' is a URL-encoded comma
+    url = f'https://api.spotify.com/v1/audio-features?ids={ids}'
     headers = get_auth_header(token)
 
     result = get(url=url, headers=headers)
     json_result = json.loads(result.content)
 
+    return json_result['audio_features']
+
+def get_artist_by_id(token, artist_id: str):
+    url = f'https://api.spotify.com/v1/artists/{artist_id}'
+    # print(url)
+    headers = get_auth_header(token)
+
+    result = get(url=url, headers=headers)
+    json_result = json.loads(result.content)
+    
     if len(json_result) == 0:
-        print("No user's top artists found")
+        print("No artist found")
         return None
     return json_result
-
-def get_artist_by_id(token, artists_id: str):
-    pass

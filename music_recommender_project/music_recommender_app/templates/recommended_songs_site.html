@@ -28,9 +28,27 @@
 
 
         <div class="main">
-            {{user_profile}}
             <div id="recommended_songs_list" class="tracks-list">
-                {% for song in user_saved_tracks.items %}
+                {% for song in tracks %}
+                    <a href={{ song.track.external_urls.spotify }} target="_blank">
+                        <div class="track-container">
+                            <img src="{{ song.track.album.images.0.url }}" alt="Track Image" class="track-image">
+                            <br><br>
+                            <div class="track-info">
+                                <div class="track-name">{{ song.track.name }} {{ song.track.id }}</div>
+                                <div class="track-artist">
+                                    {% for artist in song.track.artists %}
+                                        {{ artist.name }}&nbsp;&nbsp;
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            {% for key, val in song.audio_features.items %}
+                                {{ key }}: {{ val }}<br>
+                            {% endfor %}
+                        </div>
+                    </a>
+                {% endfor %}
+                {% comment %} {% for song in user_saved_tracks.items %}
                     {% for track_audio in user_tracks_audio_features %}
                         {% if track_audio.id == song.track.id %}
                             <a href={{ song.track.external_urls.spotify }} target="_blank">
@@ -53,9 +71,8 @@
                     
                         {% endif %}
                     {% endfor %}
-                {% endfor %}
+                {% endfor %} {% endcomment %}
             </div>
-            
         </div>
     </body>
 </html>

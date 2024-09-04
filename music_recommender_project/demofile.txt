@@ -1,1330 +1,1700 @@
+name: HOT ONE (with TiaCorine & A$AP Ferg)
+artists: Denzel Curry, TiaCorine, A$AP Ferg
+genres: miami hip hop, hip hop, trap queen, dark trap, underground hip hop, rap, trap, drill, southern hip hop, pop rap
+audio_features:
+  danceability: 0.788
+  energy: 0.715
+  key: 5
+  loudness: -5.211
+  mode: 1
+  speechiness: 0.119
+  acousticness: 0.698
+  instrumentalness: 0
+  liveness: 0.152
+  valence: 0.819
+  tempo: 81.523
+  id: 2TmS5wJTfWrpFgakSSTdCi
+  duration_ms: 165271
+  time_signature: 4
+
+
 name: beat it
-artists: Lil Peep  Nedarb  
-genres: emo rap, cloud rap, lgbtq+ hip hop
-danceability: 0.716
-energy: 0.586
-key: 6
-loudness: -5.835
-mode: 1
-speechiness: 0.0279
-acousticness: 0.289
-instrumentalness: 5.13e-05
-liveness: 0.106
-valence: 0.255
-tempo: 114.029
-id: 0GZKXX0In7pcQhxVPdz2Ls
-duration_ms: 202227
-time_signature: 4
+artists: Lil Peep, Nedarb
+genres: emo rap, lgbtq+ hip hop, cloud rap
+audio_features:
+  danceability: 0.716
+  energy: 0.586
+  key: 6
+  loudness: -5.835
+  mode: 1
+  speechiness: 0.0279
+  acousticness: 0.289
+  instrumentalness: 5.13e-05
+  liveness: 0.106
+  valence: 0.255
+  tempo: 114.029
+  id: 0GZKXX0In7pcQhxVPdz2Ls
+  duration_ms: 202227
+  time_signature: 4
 
 
 name: Na Na Na Na Na (Caught Slippin)
-artists: Ramirez  
-genres: cloud rap, dark trap, phonk
-danceability: 0.833
-energy: 0.895
-key: 9
-loudness: -4.764
-mode: 1
-speechiness: 0.204
-acousticness: 0.0623
-instrumentalness: 0.00031
-liveness: 0.317
-valence: 0.77
-tempo: 93.99
-id: 6dkYNFH4F8BttEgtjIPoI3
-duration_ms: 153260
-time_signature: 4
+artists: Ramirez
+genres: phonk, cloud rap, dark trap
+audio_features:
+  danceability: 0.833
+  energy: 0.895
+  key: 9
+  loudness: -4.764
+  mode: 1
+  speechiness: 0.204
+  acousticness: 0.0623
+  instrumentalness: 0.00031
+  liveness: 0.317
+  valence: 0.77
+  tempo: 93.99
+  id: 6dkYNFH4F8BttEgtjIPoI3
+  duration_ms: 153260
+  time_signature: 4
 
 
 name: Parking Lot
-artists: Mustard  Travis Scott  
-genres: cali rap, southern hip hop, rap, slap house, pop rap, trap
-danceability: 0.724
-energy: 0.555
-key: 3
-loudness: -7.2
-mode: 1
-speechiness: 0.0507
-acousticness: 0.17
-instrumentalness: 2.61e-05
-liveness: 0.322
-valence: 0.408
-tempo: 100.047
-id: 4IFd7EVCyJsUHesBMXI8ju
-duration_ms: 175321
-time_signature: 4
+artists: Mustard, Travis Scott
+genres: slap house, rap, trap, cali rap, southern hip hop, pop rap
+audio_features:
+  danceability: 0.724
+  energy: 0.555
+  key: 3
+  loudness: -7.2
+  mode: 1
+  speechiness: 0.0507
+  acousticness: 0.17
+  instrumentalness: 2.61e-05
+  liveness: 0.322
+  valence: 0.408
+  tempo: 100.047
+  id: 4IFd7EVCyJsUHesBMXI8ju
+  duration_ms: 175321
+  time_signature: 4
 
 
 name: Gangsta
-artists: Free Nationals  A$AP Rocky  Anderson .Paak  
-genres: indie soul, rap, hip hop, alternative r&b, east coast hip hop, escape room, neo soul
-danceability: 0.642
-energy: 0.784
-key: 9
-loudness: -5.098
-mode: 0
-speechiness: 0.121
-acousticness: 0.429
-instrumentalness: 0.000166
-liveness: 0.225
-valence: 0.518
-tempo: 79.969
-id: 49oKnEjgRSs3DMXScEU2G1
-duration_ms: 194521
-time_signature: 4
+artists: Free Nationals, A$AP Rocky, Anderson .Paak
+genres: escape room, hip hop, rap, indie soul, alternative r&b, neo soul, east coast hip hop
+audio_features:
+  danceability: 0.642
+  energy: 0.784
+  key: 9
+  loudness: -5.098
+  mode: 0
+  speechiness: 0.121
+  acousticness: 0.429
+  instrumentalness: 0.000166
+  liveness: 0.225
+  valence: 0.518
+  tempo: 79.969
+  id: 49oKnEjgRSs3DMXScEU2G1
+  duration_ms: 194521
+  time_signature: 4
 
 
 name: BRAK REGU£
-artists: Young Igi  Oki  Sergiusz  2K  
+artists: Young Igi, Oki, Sergiusz, 2K
 genres: polish hip hop, polish trap
-danceability: 0.822
-energy: 0.728
-key: 8
-loudness: -6.203
-mode: 1
-speechiness: 0.251
-acousticness: 0.237
-instrumentalness: 0
-liveness: 0.141
-valence: 0.676
-tempo: 139.963
-id: 1U7pE3ztxh37auLRtIaWrK
-duration_ms: 154055
-time_signature: 4
+audio_features:
+  danceability: 0.822
+  energy: 0.728
+  key: 8
+  loudness: -6.203
+  mode: 1
+  speechiness: 0.251
+  acousticness: 0.237
+  instrumentalness: 0
+  liveness: 0.141
+  valence: 0.676
+  tempo: 139.963
+  id: 1U7pE3ztxh37auLRtIaWrK
+  duration_ms: 154055
+  time_signature: 4
 
 
 name: The Thin Grey Line
-artists: $uicideboy$  
-genres: new orleans rap, cloud rap, underground hip hop, dark trap
-danceability: 0.761
-energy: 0.806
-key: 1
-loudness: -4.926
-mode: 1
-speechiness: 0.174
-acousticness: 0.0232
-instrumentalness: 1.66e-05
-liveness: 0.277
-valence: 0.381
-tempo: 142.908
-id: 0lZYlxoSG7DCecuLvMERfP
-duration_ms: 105724
-time_signature: 4
+artists: $uicideboy$
+genres: underground hip hop, cloud rap, dark trap, new orleans rap
+audio_features:
+  danceability: 0.761
+  energy: 0.806
+  key: 1
+  loudness: -4.926
+  mode: 1
+  speechiness: 0.174
+  acousticness: 0.0232
+  instrumentalness: 1.66e-05
+  liveness: 0.277
+  valence: 0.381
+  tempo: 142.908
+  id: 0lZYlxoSG7DCecuLvMERfP
+  duration_ms: 105724
+  time_signature: 4
 
 
 name: MAFIA
-artists: Travis Scott  
-genres: slap house, rap
-danceability: 0.855
-energy: 0.492
-key: 0
-loudness: -7.578
-mode: 0
-speechiness: 0.0483
-acousticness: 0.0775
-instrumentalness: 6.71e-06
-liveness: 0.111
-valence: 0.385
-tempo: 109.975
-id: 08F16baYbciTva9P4BvpiI
-duration_ms: 240000
-time_signature: 4
+artists: Travis Scott
+genres: rap, slap house
+audio_features:
+  danceability: 0.855
+  energy: 0.492
+  key: 0
+  loudness: -7.578
+  mode: 0
+  speechiness: 0.0483
+  acousticness: 0.0775
+  instrumentalness: 6.71e-06
+  liveness: 0.111
+  valence: 0.385
+  tempo: 109.975
+  id: 08F16baYbciTva9P4BvpiI
+  duration_ms: 240000
+  time_signature: 4
 
 
 name: Let Go
-artists: Aaron May  
+artists: Aaron May
 genres: conscious hip hop
-danceability: 0.87
-energy: 0.498
-key: 9
-loudness: -8.339
-mode: 0
-speechiness: 0.0622
-acousticness: 0.046
-instrumentalness: 0
-liveness: 0.146
-valence: 0.692
-tempo: 110.017
-id: 7cLnbmx7ZUWAwyocrKz3wL
-duration_ms: 176532
-time_signature: 4
+audio_features:
+  danceability: 0.87
+  energy: 0.498
+  key: 9
+  loudness: -8.339
+  mode: 0
+  speechiness: 0.0622
+  acousticness: 0.046
+  instrumentalness: 0
+  liveness: 0.146
+  valence: 0.692
+  tempo: 110.017
+  id: 7cLnbmx7ZUWAwyocrKz3wL
+  duration_ms: 176532
+  time_signature: 4
 
 
 name: Dreamin Of The Past (feat. Kanye West)
-artists: Pusha T  Kanye West  
-genres: gangster rap, southern hip hop, rap, chicago rap, hip hop, virginia hip hop, pop rap, trap
-danceability: 0.594
-energy: 0.913
-key: 6
-loudness: -2.372
-mode: 0
-speechiness: 0.255
-acousticness: 0.655
-instrumentalness: 0
-liveness: 0.423
-valence: 0.897
-tempo: 80.302
-id: 3Wx98ijEDnsxyMYePCuFNI
-duration_ms: 173633
-time_signature: 4
+artists: Pusha T, Kanye West
+genres: hip hop, chicago rap, rap, trap, southern hip hop, virginia hip hop, gangster rap, pop rap
+audio_features:
+  danceability: 0.594
+  energy: 0.913
+  key: 6
+  loudness: -2.372
+  mode: 0
+  speechiness: 0.255
+  acousticness: 0.655
+  instrumentalness: 0
+  liveness: 0.423
+  valence: 0.897
+  tempo: 80.302
+  id: 3Wx98ijEDnsxyMYePCuFNI
+  duration_ms: 173633
+  time_signature: 4
 
 
 name: Cinderella
-artists: Future  Metro Boomin  Travis Scott  
-genres: southern hip hop, rap, hip hop, slap house, atl hip hop, trap
-danceability: 0.876
-energy: 0.412
-key: 5
-loudness: -7.74
-mode: 0
-speechiness: 0.0748
-acousticness: 0.431
-instrumentalness: 0
-liveness: 0.101
-valence: 0.15
-tempo: 130.052
-id: 0hKtu53OlIFXVuYkZwcn3o
-duration_ms: 169840
-time_signature: 4
+artists: Future, Metro Boomin, Travis Scott
+genres: hip hop, slap house, rap, trap, atl hip hop, southern hip hop
+audio_features:
+  danceability: 0.876
+  energy: 0.412
+  key: 5
+  loudness: -7.74
+  mode: 0
+  speechiness: 0.0748
+  acousticness: 0.431
+  instrumentalness: 0
+  liveness: 0.101
+  valence: 0.15
+  tempo: 130.052
+  id: 0hKtu53OlIFXVuYkZwcn3o
+  duration_ms: 169840
+  time_signature: 4
 
 
 name: Us Vs. Them
-artists: $uicideboy$  
-genres: new orleans rap, cloud rap, underground hip hop, dark trap
-danceability: 0.651
-energy: 0.906
-key: 6
-loudness: -4.454
-mode: 1
-speechiness: 0.172
-acousticness: 0.046
-instrumentalness: 0.214
-liveness: 0.895
-valence: 0.509
-tempo: 77.978
-id: 3cmdqMDc0Fj4TgPeyDOYTM
-duration_ms: 184633
-time_signature: 4
+artists: $uicideboy$
+genres: underground hip hop, cloud rap, dark trap, new orleans rap
+audio_features:
+  danceability: 0.651
+  energy: 0.906
+  key: 6
+  loudness: -4.454
+  mode: 1
+  speechiness: 0.172
+  acousticness: 0.046
+  instrumentalness: 0.214
+  liveness: 0.895
+  valence: 0.509
+  tempo: 77.978
+  id: 3cmdqMDc0Fj4TgPeyDOYTM
+  duration_ms: 184633
+  time_signature: 4
 
 
 name: Pussy & Millions (feat. Travis Scott)
-artists: Drake  21 Savage  Travis Scott  
-genres: canadian hip hop, rap, canadian pop, hip hop, slap house, pop rap, atl hip hop
-danceability: 0.747
-energy: 0.618
-key: 4
-loudness: -6.685
-mode: 0
-speechiness: 0.111
-acousticness: 0.061
-instrumentalness: 0
-liveness: 0.377
-valence: 0.377
-tempo: 122.09
-id: 2KLwPaRDOB87XOYAT2fgxh
-duration_ms: 242027
-time_signature: 4
+artists: Drake, 21 Savage, Travis Scott
+genres: hip hop, slap house, rap, atl hip hop, canadian pop, pop rap, canadian hip hop
+audio_features:
+  danceability: 0.747
+  energy: 0.618
+  key: 4
+  loudness: -6.685
+  mode: 0
+  speechiness: 0.111
+  acousticness: 0.061
+  instrumentalness: 0
+  liveness: 0.377
+  valence: 0.377
+  tempo: 122.09
+  id: 2KLwPaRDOB87XOYAT2fgxh
+  duration_ms: 242027
+  time_signature: 4
 
 
 name: Hyyerr
-artists: Kid Cudi  Chip Tha Ripper  
-genres: pop rap, hip hop, ohio hip hop, rap
-danceability: 0.726
-energy: 0.65
-key: 4
-loudness: -3.96
-mode: 0
-speechiness: 0.0825
-acousticness: 0.285
-instrumentalness: 0
-liveness: 0.622
-valence: 0.585
-tempo: 119.979
-id: 5lqTk7DqY4hsbLNB48kByx
-duration_ms: 212107
-time_signature: 4
+artists: Kid Cudi, Chip Tha Ripper
+genres: rap, pop rap, hip hop, ohio hip hop
+audio_features:
+  danceability: 0.726
+  energy: 0.65
+  key: 4
+  loudness: -3.96
+  mode: 0
+  speechiness: 0.0825
+  acousticness: 0.285
+  instrumentalness: 0
+  liveness: 0.622
+  valence: 0.585
+  tempo: 119.979
+  id: 5lqTk7DqY4hsbLNB48kByx
+  duration_ms: 212107
+  time_signature: 4
 
 
 name: bezludna wyspa
-artists: Kukon  Suwal  Kusha  
+artists: Kukon, Suwal, Kusha
 genres: polish hip hop, polish trap
-danceability: 0.7
-energy: 0.605
-key: 11
-loudness: -8.059
-mode: 0
-speechiness: 0.329
-acousticness: 0.517
-instrumentalness: 0
-liveness: 0.11
-valence: 0.295
-tempo: 83.836
-id: 6dZf6f189d3DX35O8hFgGZ
-duration_ms: 189280
-time_signature: 4
+audio_features:
+  danceability: 0.7
+  energy: 0.605
+  key: 11
+  loudness: -8.059
+  mode: 0
+  speechiness: 0.329
+  acousticness: 0.517
+  instrumentalness: 0
+  liveness: 0.11
+  valence: 0.295
+  tempo: 83.836
+  id: 6dZf6f189d3DX35O8hFgGZ
+  duration_ms: 189280
+  time_signature: 4
 
 
 name: Breathe
-artists: Yeat  
-genres: rage rap, pluggnb
-danceability: 0.76
-energy: 0.546
-key: 11
-loudness: -13.092
-mode: 1
-speechiness: 0.0616
-acousticness: 0.0284
-instrumentalness: 0.924
-liveness: 0.103
-valence: 0.113
-tempo: 118.051
-id: 5NAOhPAZ57eFAXr3qatS6i
-duration_ms: 170847
-time_signature: 4
+artists: Yeat
+genres: pluggnb, rage rap
+audio_features:
+  danceability: 0.76
+  energy: 0.546
+  key: 11
+  loudness: -13.092
+  mode: 1
+  speechiness: 0.0616
+  acousticness: 0.0284
+  instrumentalness: 0.924
+  liveness: 0.103
+  valence: 0.113
+  tempo: 118.051
+  id: 5NAOhPAZ57eFAXr3qatS6i
+  duration_ms: 170847
+  time_signature: 4
 
 
 name: FLOWIN
-artists: 3weeksin  
+artists: 3weeksin
 genres: Unknown
-danceability: 0.758
-energy: 0.838
-key: 1
-loudness: -5.349
-mode: 1
-speechiness: 0.156
-acousticness: 0.584
-instrumentalness: 0
-liveness: 0.438
-valence: 0.509
-tempo: 142.939
-id: 11iFMXOe5XEiPx2FohJogW
-duration_ms: 125516
-time_signature: 4
+audio_features:
+  danceability: 0.758
+  energy: 0.838
+  key: 1
+  loudness: -5.349
+  mode: 1
+  speechiness: 0.156
+  acousticness: 0.584
+  instrumentalness: 0
+  liveness: 0.438
+  valence: 0.509
+  tempo: 142.939
+  id: 11iFMXOe5XEiPx2FohJogW
+  duration_ms: 125516
+  time_signature: 4
 
 
 name: redrum
-artists: 21 Savage  
-genres: atl hip hop, hip hop, rap
-danceability: 0.625
-energy: 0.733
-key: 2
-loudness: -8.757
-mode: 1
-speechiness: 0.0488
-acousticness: 0.00598
-instrumentalness: 0.000983
-liveness: 0.375
-valence: 0.244
-tempo: 172.09
-id: 52eIcoLUM25zbQupAZYoFh
-duration_ms: 270698
-time_signature: 4
+artists: 21 Savage
+genres: atl hip hop, rap, hip hop
+audio_features:
+  danceability: 0.625
+  energy: 0.733
+  key: 2
+  loudness: -8.757
+  mode: 1
+  speechiness: 0.0488
+  acousticness: 0.00598
+  instrumentalness: 0.000983
+  liveness: 0.375
+  valence: 0.244
+  tempo: 172.09
+  id: 52eIcoLUM25zbQupAZYoFh
+  duration_ms: 270698
+  time_signature: 4
 
 
 name: Hot (Remix) [feat. Gunna and Travis Scott]
-artists: Young Thug  Travis Scott  Gunna  
-genres: gangster rap, rap, slap house, atl hip hop, melodic rap, atl trap, trap
-danceability: 0.845
-energy: 0.631
-key: 7
-loudness: -8.206
-mode: 0
-speechiness: 0.216
-acousticness: 0.188
-instrumentalness: 0
-liveness: 0.0806
-valence: 0.545
-tempo: 111.983
-id: 4ea9w8c4ROqiZpJVhfBA3m
-duration_ms: 279907
-time_signature: 4
+artists: Young Thug, Travis Scott, Gunna
+genres: slap house, atl trap, rap, trap, atl hip hop, melodic rap, gangster rap
+audio_features:
+  danceability: 0.845
+  energy: 0.631
+  key: 7
+  loudness: -8.206
+  mode: 0
+  speechiness: 0.216
+  acousticness: 0.188
+  instrumentalness: 0
+  liveness: 0.0806
+  valence: 0.545
+  tempo: 111.983
+  id: 4ea9w8c4ROqiZpJVhfBA3m
+  duration_ms: 279907
+  time_signature: 4
 
 
 name: 5% TINT
-artists: Travis Scott  
-genres: slap house, rap
-danceability: 0.712
-energy: 0.481
-key: 4
-loudness: -5.415
-mode: 0
-speechiness: 0.0487
-acousticness: 0.173
-instrumentalness: 0
-liveness: 0.241
-valence: 0.062
-tempo: 140.0
-id: 11kDth1aKUEUMq9r1pqyds
-duration_ms: 196138
-time_signature: 4
+artists: Travis Scott
+genres: rap, slap house
+audio_features:
+  danceability: 0.712
+  energy: 0.481
+  key: 4
+  loudness: -5.415
+  mode: 0
+  speechiness: 0.0487
+  acousticness: 0.173
+  instrumentalness: 0
+  liveness: 0.241
+  valence: 0.062
+  tempo: 140.0
+  id: 11kDth1aKUEUMq9r1pqyds
+  duration_ms: 196138
+  time_signature: 4
 
 
 name: ASTROTHUNDER
-artists: Travis Scott  
-genres: slap house, rap
-danceability: 0.7
-energy: 0.46
-key: 4
-loudness: -8.111
-mode: 0
-speechiness: 0.0661
-acousticness: 0.142
-instrumentalness: 4.81e-05
-liveness: 0.111
-valence: 0.286
-tempo: 151.901
-id: 4MXhiYIRDMGAuvZc5IFTwC
-duration_ms: 142969
-time_signature: 4
+artists: Travis Scott
+genres: rap, slap house
+audio_features:
+  danceability: 0.7
+  energy: 0.46
+  key: 4
+  loudness: -8.111
+  mode: 0
+  speechiness: 0.0661
+  acousticness: 0.142
+  instrumentalness: 4.81e-05
+  liveness: 0.111
+  valence: 0.286
+  tempo: 151.901
+  id: 4MXhiYIRDMGAuvZc5IFTwC
+  duration_ms: 142969
+  time_signature: 4
 
 
 name: TOPIA TWINS (feat. Rob49 & 21 Savage)
-artists: Travis Scott  Rob49  21 Savage  
-genres: rap, slap house, hip hop, new orleans rap, atl hip hop
-danceability: 0.715
-energy: 0.567
-key: 1
-loudness: -4.481
-mode: 0
-speechiness: 0.0865
-acousticness: 0.06
-instrumentalness: 0
-liveness: 0.0655
-valence: 0.332
-tempo: 160.098
-id: 0lodMO0qK83vfPiiD7FMEt
-duration_ms: 223174
-time_signature: 4
+artists: Travis Scott, Rob49, 21 Savage
+genres: hip hop, slap house, rap, atl hip hop, new orleans rap
+audio_features:
+  danceability: 0.715
+  energy: 0.567
+  key: 1
+  loudness: -4.481
+  mode: 0
+  speechiness: 0.0865
+  acousticness: 0.06
+  instrumentalness: 0
+  liveness: 0.0655
+  valence: 0.332
+  tempo: 160.098
+  id: 0lodMO0qK83vfPiiD7FMEt
+  duration_ms: 223174
+  time_signature: 4
 
 
 name: MY EYES
-artists: Travis Scott  
-genres: slap house, rap
-danceability: 0.455
-energy: 0.621
-key: 0
-loudness: -7.694
-mode: 0
-speechiness: 0.0517
-acousticness: 0.651
-instrumentalness: 2.59e-06
-liveness: 0.123
-valence: 0.28
-tempo: 119.043
-id: 4kjI1gwQZRKNDkw1nI475M
-duration_ms: 251250
-time_signature: 4
+artists: Travis Scott
+genres: rap, slap house
+audio_features:
+  danceability: 0.455
+  energy: 0.621
+  key: 0
+  loudness: -7.694
+  mode: 0
+  speechiness: 0.0517
+  acousticness: 0.651
+  instrumentalness: 2.59e-06
+  liveness: 0.123
+  valence: 0.28
+  tempo: 119.043
+  id: 4kjI1gwQZRKNDkw1nI475M
+  duration_ms: 251250
+  time_signature: 4
 
 
 name: née-nah
-artists: 21 Savage  Travis Scott  Metro Boomin  
-genres: atl hip hop, slap house, hip hop, rap
-danceability: 0.681
-energy: 0.758
-key: 1
-loudness: -6.524
-mode: 1
-speechiness: 0.188
-acousticness: 0.00465
-instrumentalness: 0
-liveness: 0.555
-valence: 0.331
-tempo: 165.409
-id: 2yUzr8Sr6ldG8vmHhZwTnz
-duration_ms: 220584
-time_signature: 4
+artists: 21 Savage, Travis Scott, Metro Boomin
+genres: atl hip hop, rap, slap house, hip hop
+audio_features:
+  danceability: 0.681
+  energy: 0.758
+  key: 1
+  loudness: -6.524
+  mode: 1
+  speechiness: 0.188
+  acousticness: 0.00465
+  instrumentalness: 0
+  liveness: 0.555
+  valence: 0.331
+  tempo: 165.409
+  id: 2yUzr8Sr6ldG8vmHhZwTnz
+  duration_ms: 220584
+  time_signature: 4
 
 
 name: MELTDOWN (feat. Drake)
-artists: Travis Scott  Drake  
-genres: canadian hip hop, rap, canadian pop, slap house, hip hop, pop rap
-danceability: 0.557
-energy: 0.774
-key: 7
-loudness: -5.275
-mode: 0
-speechiness: 0.351
-acousticness: 0.012
-instrumentalness: 0
-liveness: 0.396
-valence: 0.397
-tempo: 111.975
-id: 67nepsnrcZkowTxMWigSbb
-duration_ms: 246134
-time_signature: 4
+artists: Travis Scott, Drake
+genres: hip hop, slap house, rap, canadian pop, pop rap, canadian hip hop
+audio_features:
+  danceability: 0.557
+  energy: 0.774
+  key: 7
+  loudness: -5.275
+  mode: 0
+  speechiness: 0.351
+  acousticness: 0.012
+  instrumentalness: 0
+  liveness: 0.396
+  valence: 0.397
+  tempo: 111.975
+  id: 67nepsnrcZkowTxMWigSbb
+  duration_ms: 246134
+  time_signature: 4
 
 
 name: THANK GOD
-artists: Travis Scott  
-genres: slap house, rap
-danceability: 0.657
-energy: 0.553
-key: 10
-loudness: -7.08
-mode: 0
-speechiness: 0.0394
-acousticness: 0.254
-instrumentalness: 0
-liveness: 0.129
-valence: 0.576
-tempo: 134.925
-id: 1PH2MDbcBAU094DlgTIND1
-duration_ms: 184889
-time_signature: 4
+artists: Travis Scott
+genres: rap, slap house
+audio_features:
+  danceability: 0.657
+  energy: 0.553
+  key: 10
+  loudness: -7.08
+  mode: 0
+  speechiness: 0.0394
+  acousticness: 0.254
+  instrumentalness: 0
+  liveness: 0.129
+  valence: 0.576
+  tempo: 134.925
+  id: 1PH2MDbcBAU094DlgTIND1
+  duration_ms: 184889
+  time_signature: 4
 
 
 name: TIL FURTHER NOTICE (feat. James Blake & 21 Savage)
-artists: Travis Scott  James Blake  21 Savage  
-genres: indietronica, indie soul, rap, slap house, hip hop, uk alternative pop, art pop, atl hip hop
-danceability: 0.65
-energy: 0.659
-key: 3
-loudness: -6.522
-mode: 0
-speechiness: 0.123
-acousticness: 0.174
-instrumentalness: 0.00772
-liveness: 0.126
-valence: 0.154
-tempo: 76.985
-id: 76gcXhY3Zv6wW0BTe9nHJo
-duration_ms: 314836
-time_signature: 4
+artists: Travis Scott, James Blake, 21 Savage
+genres: uk alternative pop, slap house, indietronica, hip hop, rap, indie soul, art pop, atl hip hop
+audio_features:
+  danceability: 0.65
+  energy: 0.659
+  key: 3
+  loudness: -6.522
+  mode: 0
+  speechiness: 0.123
+  acousticness: 0.174
+  instrumentalness: 0.00772
+  liveness: 0.126
+  valence: 0.154
+  tempo: 76.985
+  id: 76gcXhY3Zv6wW0BTe9nHJo
+  duration_ms: 314836
+  time_signature: 4
 
 
 name: Red Roses (feat. Landon Cube)
-artists: Lil Skies  Landon Cube  
+artists: Lil Skies, Landon Cube
 genres: pop rap, melodic rap
-danceability: 0.691
-energy: 0.683
-key: 0
-loudness: -7.335
-mode: 1
-speechiness: 0.0954
-acousticness: 0.547
-instrumentalness: 0
-liveness: 0.221
-valence: 0.456
-tempo: 140.002
-id: 3ZhTT6yjZwpPph5MIJ53XY
-duration_ms: 262544
-time_signature: 4
+audio_features:
+  danceability: 0.691
+  energy: 0.683
+  key: 0
+  loudness: -7.335
+  mode: 1
+  speechiness: 0.0954
+  acousticness: 0.547
+  instrumentalness: 0
+  liveness: 0.221
+  valence: 0.456
+  tempo: 140.002
+  id: 3ZhTT6yjZwpPph5MIJ53XY
+  duration_ms: 262544
+  time_signature: 4
 
 
 name: PARASAIL (feat. Yung Lean & Dave Chappelle)
-artists: Travis Scott  Yung Lean  Dave Chappelle  
-genres: underground hip hop, comedy, rap, slap house, cloud rap, psychedelic hip hop, black comedy
-danceability: 0.361
-energy: 0.395
-key: 5
-loudness: -8.51
-mode: 0
-speechiness: 0.0429
-acousticness: 0.858
-instrumentalness: 0.00356
-liveness: 0.211
-valence: 0.208
-tempo: 75.923
-id: 2Q0aElTZQtEUsoiaQfizu6
-duration_ms: 154964
-time_signature: 3
+artists: Travis Scott, Yung Lean, Dave Chappelle
+genres: slap house, comedy, underground hip hop, rap, psychedelic hip hop, black comedy, cloud rap
+audio_features:
+  danceability: 0.361
+  energy: 0.395
+  key: 5
+  loudness: -8.51
+  mode: 0
+  speechiness: 0.0429
+  acousticness: 0.858
+  instrumentalness: 0.00356
+  liveness: 0.211
+  valence: 0.208
+  tempo: 75.923
+  id: 2Q0aElTZQtEUsoiaQfizu6
+  duration_ms: 154964
+  time_signature: 3
 
 
 name: Ghosttown
-artists: Yung Lean  Travis Scott  
-genres: underground hip hop, rap, slap house, cloud rap, psychedelic hip hop
-danceability: 0.529
-energy: 0.529
-key: 5
-loudness: -9.035
-mode: 0
-speechiness: 0.0774
-acousticness: 0.0737
-instrumentalness: 5.76e-05
-liveness: 0.0921
-valence: 0.146
-tempo: 126.924
-id: 7l26dZs9DhSf8xyJ7NxbuP
-duration_ms: 309880
-time_signature: 4
+artists: Yung Lean, Travis Scott
+genres: slap house, underground hip hop, rap, psychedelic hip hop, cloud rap
+audio_features:
+  danceability: 0.529
+  energy: 0.529
+  key: 5
+  loudness: -9.035
+  mode: 0
+  speechiness: 0.0774
+  acousticness: 0.0737
+  instrumentalness: 5.76e-05
+  liveness: 0.0921
+  valence: 0.146
+  tempo: 126.924
+  id: 7l26dZs9DhSf8xyJ7NxbuP
+  duration_ms: 309880
+  time_signature: 4
 
 
 name: Kyoto
-artists: Yung Lean  
-genres: psychedelic hip hop, cloud rap, underground hip hop
-danceability: 0.622
-energy: 0.717
-key: 11
-loudness: -7.449
-mode: 0
-speechiness: 0.208
-acousticness: 0.218
-instrumentalness: 2.19e-06
-liveness: 0.113
-valence: 0.208
-tempo: 116.934
-id: 7vQ8hT2jlA6RhxI4ZxISVd
-duration_ms: 270000
-time_signature: 4
+artists: Yung Lean
+genres: cloud rap, psychedelic hip hop, underground hip hop
+audio_features:
+  danceability: 0.622
+  energy: 0.717
+  key: 11
+  loudness: -7.449
+  mode: 0
+  speechiness: 0.208
+  acousticness: 0.218
+  instrumentalness: 2.19e-06
+  liveness: 0.113
+  valence: 0.208
+  tempo: 116.934
+  id: 7vQ8hT2jlA6RhxI4ZxISVd
+  duration_ms: 270000
+  time_signature: 4
 
 
 name: WHO? WHAT!
-artists: Travis Scott  
-genres: slap house, rap
-danceability: 0.834
-energy: 0.731
-key: 10
-loudness: -5.603
-mode: 0
-speechiness: 0.0566
-acousticness: 0.0462
-instrumentalness: 0
-liveness: 0.0731
-valence: 0.681
-tempo: 140.001
-id: 4KYS9GK68yeuUJ8vJfPxrq
-duration_ms: 176720
-time_signature: 4
+artists: Travis Scott
+genres: rap, slap house
+audio_features:
+  danceability: 0.834
+  energy: 0.731
+  key: 10
+  loudness: -5.603
+  mode: 0
+  speechiness: 0.0566
+  acousticness: 0.0462
+  instrumentalness: 0
+  liveness: 0.0731
+  valence: 0.681
+  tempo: 140.001
+  id: 4KYS9GK68yeuUJ8vJfPxrq
+  duration_ms: 176720
+  time_signature: 4
 
 
 name: Overdue (with Travis Scott)
-artists: Metro Boomin  Travis Scott  
-genres: slap house, rap
-danceability: 0.634
-energy: 0.401
-key: 11
-loudness: -11.212
-mode: 0
-speechiness: 0.0446
-acousticness: 0.731
-instrumentalness: 0.000132
-liveness: 0.334
-valence: 0.494
-tempo: 150.174
-id: 6LyAwkJsHlW7RQ8S1cYAtM
-duration_ms: 166093
-time_signature: 4
+artists: Metro Boomin, Travis Scott
+genres: rap, slap house
+audio_features:
+  danceability: 0.634
+  energy: 0.401
+  key: 11
+  loudness: -11.212
+  mode: 0
+  speechiness: 0.0446
+  acousticness: 0.731
+  instrumentalness: 0.000132
+  liveness: 0.334
+  valence: 0.494
+  tempo: 150.174
+  id: 6LyAwkJsHlW7RQ8S1cYAtM
+  duration_ms: 166093
+  time_signature: 4
 
 
 name: VVV
-artists: mikeeysmind  Sanikwave  
+artists: mikeeysmind, Sanikwave
 genres: sped up
-danceability: 0.599
-energy: 0.907
-key: 1
-loudness: -2.332
-mode: 1
-speechiness: 0.153
-acousticness: 0.0027
-instrumentalness: 0
-liveness: 0.396
-valence: 0.259
-tempo: 154.986
-id: 5XXAkqaDUHTVyBCuVBzCWF
-duration_ms: 227613
-time_signature: 4
+audio_features:
+  danceability: 0.599
+  energy: 0.907
+  key: 1
+  loudness: -2.332
+  mode: 1
+  speechiness: 0.153
+  acousticness: 0.0027
+  instrumentalness: 0
+  liveness: 0.396
+  valence: 0.259
+  tempo: 154.986
+  id: 5XXAkqaDUHTVyBCuVBzCWF
+  duration_ms: 227613
+  time_signature: 4
 
 
 name: BFF
-artists: bambi  Young Leosia  PG$  @atutowy  
+artists: bambi, Young Leosia, PG$, @atutowy
 genres: polish hip hop, polish viral pop, polish pop
-danceability: 0.685
-energy: 0.723
-key: 6
-loudness: -7.159
-mode: 0
-speechiness: 0.0887
-acousticness: 0.0293
-instrumentalness: 1.83e-05
-liveness: 0.103
-valence: 0.435
-tempo: 145.955
-id: 1kuhnhugcuXf4CiNdqCRUU
-duration_ms: 174247
-time_signature: 4
+audio_features:
+  danceability: 0.685
+  energy: 0.723
+  key: 6
+  loudness: -7.159
+  mode: 0
+  speechiness: 0.0887
+  acousticness: 0.0293
+  instrumentalness: 1.83e-05
+  liveness: 0.103
+  valence: 0.435
+  tempo: 145.955
+  id: 1kuhnhugcuXf4CiNdqCRUU
+  duration_ms: 174247
+  time_signature: 4
 
 
 name: 500lbs
-artists: Lil Tecca  
+artists: Lil Tecca
 genres: rap, pluggnb, melodic rap
-danceability: 0.724
-energy: 0.779
-key: 7
-loudness: -5.412
-mode: 0
-speechiness: 0.0807
-acousticness: 0.098
-instrumentalness: 0
-liveness: 0.127
-valence: 0.53
-tempo: 123.013
-id: 1xWkeSPhf3bZqHY7Ncz8vp
-duration_ms: 144390
-time_signature: 4
+audio_features:
+  danceability: 0.724
+  energy: 0.779
+  key: 7
+  loudness: -5.412
+  mode: 0
+  speechiness: 0.0807
+  acousticness: 0.098
+  instrumentalness: 0
+  liveness: 0.127
+  valence: 0.53
+  tempo: 123.013
+  id: 1xWkeSPhf3bZqHY7Ncz8vp
+  duration_ms: 144390
+  time_signature: 4
 
 
 name: Nicea
-artists: PRO8L3M  
+artists: PRO8L3M
 genres: polish hip hop
-danceability: 0.742
-energy: 0.662
-key: 2
-loudness: -6.375
-mode: 1
-speechiness: 0.288
-acousticness: 0.143
-instrumentalness: 0
-liveness: 0.12
-valence: 0.346
-tempo: 130.087
-id: 5OYaQw9IS8MMDFRgTPqDnR
-duration_ms: 217846
-time_signature: 4
+audio_features:
+  danceability: 0.742
+  energy: 0.662
+  key: 2
+  loudness: -6.375
+  mode: 1
+  speechiness: 0.288
+  acousticness: 0.143
+  instrumentalness: 0
+  liveness: 0.12
+  valence: 0.346
+  tempo: 130.087
+  id: 5OYaQw9IS8MMDFRgTPqDnR
+  duration_ms: 217846
+  time_signature: 4
 
 
 name: Murder & Millions
-artists: Key Glock  
-genres: southern hip hop, memphis hip hop, rap, tennessee hip hop, trap
-danceability: 0.879
-energy: 0.64
-key: 6
-loudness: -6.16
-mode: 0
-speechiness: 0.256
-acousticness: 0.0145
-instrumentalness: 0
-liveness: 0.12
-valence: 0.485
-tempo: 137.986
-id: 27RWVlCet2iZlGciBETorw
-duration_ms: 150867
-time_signature: 4
+artists: Key Glock
+genres: tennessee hip hop, rap, trap, memphis hip hop, southern hip hop
+audio_features:
+  danceability: 0.879
+  energy: 0.64
+  key: 6
+  loudness: -6.16
+  mode: 0
+  speechiness: 0.256
+  acousticness: 0.0145
+  instrumentalness: 0
+  liveness: 0.12
+  valence: 0.485
+  tempo: 137.986
+  id: 27RWVlCet2iZlGciBETorw
+  duration_ms: 150867
+  time_signature: 4
 
 
 name: WORTH IT (feat. Don Toliver)
-artists: Offset  Don Toliver  
-genres: rap, hip hop, pop rap, atl hip hop, trap
-danceability: 0.813
-energy: 0.717
-key: 10
-loudness: -5.206
-mode: 0
-speechiness: 0.0991
-acousticness: 0.191
-instrumentalness: 0
-liveness: 0.23
-valence: 0.55
-tempo: 95.064
-id: 3D9FCxbeOUllhH9Abp6Li8
-duration_ms: 188333
-time_signature: 4
+artists: Offset, Don Toliver
+genres: hip hop, rap, trap, atl hip hop, pop rap
+audio_features:
+  danceability: 0.813
+  energy: 0.717
+  key: 10
+  loudness: -5.206
+  mode: 0
+  speechiness: 0.0991
+  acousticness: 0.191
+  instrumentalness: 0
+  liveness: 0.23
+  valence: 0.55
+  tempo: 95.064
+  id: 3D9FCxbeOUllhH9Abp6Li8
+  duration_ms: 188333
+  time_signature: 4
 
 
 name: WHAT IT DO
-artists: SILVR  Scrim  
+artists: SILVR, Scrim
 genres: cloud rap, dark trap
-danceability: 0.928
-energy: 0.685
-key: 9
-loudness: -5.241
-mode: 1
-speechiness: 0.142
-acousticness: 0.036
-instrumentalness: 0.00495
-liveness: 0.105
-valence: 0.083
-tempo: 139.992
-id: 0Q8k7HksVlpQhENIYFxs6L
-duration_ms: 152184
-time_signature: 4
+audio_features:
+  danceability: 0.928
+  energy: 0.685
+  key: 9
+  loudness: -5.241
+  mode: 1
+  speechiness: 0.142
+  acousticness: 0.036
+  instrumentalness: 0.00495
+  liveness: 0.105
+  valence: 0.083
+  tempo: 139.992
+  id: 0Q8k7HksVlpQhENIYFxs6L
+  duration_ms: 152184
+  time_signature: 4
 
 
 name: Like This (feat. Lil Uzi Vert, Destroy Lonely)
-artists: Ken Carson  Lil Uzi Vert  Destroy Lonely  
-genres: rap, rage rap, philly rap, hip hop, melodic rap, trap
-danceability: 0.696
-energy: 0.689
-key: 10
-loudness: -5.813
-mode: 1
-speechiness: 0.265
-acousticness: 0.00318
-instrumentalness: 0
-liveness: 0.173
-valence: 0.237
-tempo: 147.01
-id: 1DypGkTryeH4cPFBVucxo4
-duration_ms: 192213
-time_signature: 4
+artists: Ken Carson, Lil Uzi Vert, Destroy Lonely
+genres: hip hop, rage rap, rap, trap, philly rap, melodic rap
+audio_features:
+  danceability: 0.696
+  energy: 0.689
+  key: 10
+  loudness: -5.813
+  mode: 1
+  speechiness: 0.265
+  acousticness: 0.00318
+  instrumentalness: 0
+  liveness: 0.173
+  valence: 0.237
+  tempo: 147.01
+  id: 1DypGkTryeH4cPFBVucxo4
+  duration_ms: 192213
+  time_signature: 4
 
 
 name: SAY MY GRACE (feat. Travis Scott)
-artists: Offset  Travis Scott  
-genres: rap, hip hop, slap house, pop rap, atl hip hop, trap
-danceability: 0.772
-energy: 0.631
-key: 10
-loudness: -5.082
-mode: 1
-speechiness: 0.0431
-acousticness: 0.0648
-instrumentalness: 0
-liveness: 0.129
-valence: 0.433
-tempo: 121.854
-id: 0ehWnMVmks5b25ZjFkFSop
-duration_ms: 173253
-time_signature: 4
+artists: Offset, Travis Scott
+genres: hip hop, slap house, rap, trap, atl hip hop, pop rap
+audio_features:
+  danceability: 0.772
+  energy: 0.631
+  key: 10
+  loudness: -5.082
+  mode: 1
+  speechiness: 0.0431
+  acousticness: 0.0648
+  instrumentalness: 0
+  liveness: 0.129
+  valence: 0.433
+  tempo: 121.854
+  id: 0ehWnMVmks5b25ZjFkFSop
+  duration_ms: 173253
+  time_signature: 4
 
 
 name: ADDERALL
-artists: Kukon  Brodka  Megot  Kusha  Suwal  
-genres: polish pop, crank wave, polish trap, polish hip hop, polish underground rap, polish indie
-danceability: 0.664
-energy: 0.772
-key: 10
-loudness: -5.765
-mode: 1
-speechiness: 0.165
-acousticness: 0.422
-instrumentalness: 0
-liveness: 0.202
-valence: 0.276
-tempo: 94.001
-id: 1Ki7FuiF2krk4lD8zjV3Nz
-duration_ms: 158298
-time_signature: 4
+artists: Kukon, Brodka, Megot, Kusha, Suwal
+genres: polish hip hop, polish pop, polish indie, crank wave, polish underground rap, polish trap
+audio_features:
+  danceability: 0.664
+  energy: 0.772
+  key: 10
+  loudness: -5.765
+  mode: 1
+  speechiness: 0.165
+  acousticness: 0.422
+  instrumentalness: 0
+  liveness: 0.202
+  valence: 0.276
+  tempo: 94.001
+  id: 1Ki7FuiF2krk4lD8zjV3Nz
+  duration_ms: 158298
+  time_signature: 4
 
 
 name: AGORA
-artists: YUNG DORI  $uicideboy$  RIVERSIDE JYNN  
-genres: new orleans rap, cloud rap, underground hip hop, dark trap
-danceability: 0.537
-energy: 0.4
-key: 9
-loudness: -13.532
-mode: 1
-speechiness: 0.41
-acousticness: 0.041
-instrumentalness: 0
-liveness: 0.0917
-valence: 0.153
-tempo: 145.86
-id: 0P9rK38MhcujO35AHbRsF9
-duration_ms: 219154
-time_signature: 4
+artists: YUNG DORI, $uicideboy$, RIVERSIDE JYNN
+genres: underground hip hop, cloud rap, dark trap, new orleans rap
+audio_features:
+  danceability: 0.537
+  energy: 0.4
+  key: 9
+  loudness: -13.532
+  mode: 1
+  speechiness: 0.41
+  acousticness: 0.041
+  instrumentalness: 0
+  liveness: 0.0917
+  valence: 0.153
+  tempo: 145.86
+  id: 0P9rK38MhcujO35AHbRsF9
+  duration_ms: 219154
+  time_signature: 4
 
 
 name: bigger thën everything
-artists: Yeat  
-genres: rage rap, pluggnb
-danceability: 0.686
-energy: 0.629
-key: 10
-loudness: -6.141
-mode: 0
-speechiness: 0.0543
-acousticness: 0.0127
-instrumentalness: 0.000349
-liveness: 0.237
-valence: 0.169
-tempo: 149.975
-id: 11B7WTuoInwUvuP1BnnGWW
-duration_ms: 218264
-time_signature: 4
+artists: Yeat
+genres: pluggnb, rage rap
+audio_features:
+  danceability: 0.686
+  energy: 0.629
+  key: 10
+  loudness: -6.141
+  mode: 0
+  speechiness: 0.0543
+  acousticness: 0.0127
+  instrumentalness: 0.000349
+  liveness: 0.237
+  valence: 0.169
+  tempo: 149.975
+  id: 11B7WTuoInwUvuP1BnnGWW
+  duration_ms: 218264
+  time_signature: 4
 
 
 name: Embarrassed (feat. Travis Scott)
-artists: Don Toliver  Travis Scott  
-genres: slap house, rap
-danceability: 0.848
-energy: 0.506
-key: 4
-loudness: -5.105
-mode: 0
-speechiness: 0.0336
-acousticness: 0.376
-instrumentalness: 0
-liveness: 0.102
-valence: 0.593
-tempo: 115.994
-id: 6w9GrSUaQQIaMBYtabge7p
-duration_ms: 192693
-time_signature: 4
+artists: Don Toliver, Travis Scott
+genres: rap, slap house
+audio_features:
+  danceability: 0.848
+  energy: 0.506
+  key: 4
+  loudness: -5.105
+  mode: 0
+  speechiness: 0.0336
+  acousticness: 0.376
+  instrumentalness: 0
+  liveness: 0.102
+  valence: 0.593
+  tempo: 115.994
+  id: 6w9GrSUaQQIaMBYtabge7p
+  duration_ms: 192693
+  time_signature: 4
 
 
 name: Flocky Flocky (feat. Travis Scott)
-artists: Don Toliver  Travis Scott  
-genres: slap house, rap
-danceability: 0.8
-energy: 0.541
-key: 10
-loudness: -5.05
-mode: 0
-speechiness: 0.0375
-acousticness: 0.0252
-instrumentalness: 0
-liveness: 0.146
-valence: 0.194
-tempo: 135.99
-id: 35EdCUfqkeh4tvb4J4yWqu
-duration_ms: 183514
-time_signature: 4
+artists: Don Toliver, Travis Scott
+genres: rap, slap house
+audio_features:
+  danceability: 0.8
+  energy: 0.541
+  key: 10
+  loudness: -5.05
+  mode: 0
+  speechiness: 0.0375
+  acousticness: 0.0252
+  instrumentalness: 0
+  liveness: 0.146
+  valence: 0.194
+  tempo: 135.99
+  id: 35EdCUfqkeh4tvb4J4yWqu
+  duration_ms: 183514
+  time_signature: 4
 
 
 name: Down In Atlanta
-artists: Pharrell Williams  Travis Scott  
-genres: pop, dance pop, slap house, rap
-danceability: 0.845
-energy: 0.864
-key: 7
-loudness: -4.677
-mode: 1
-speechiness: 0.0786
-acousticness: 0.577
-instrumentalness: 0.000896
-liveness: 0.0705
-valence: 0.959
-tempo: 166.531
-id: 5unjCay0kUjuej5ebn4nS4
-duration_ms: 164041
-time_signature: 3
+artists: Pharrell Williams, Travis Scott
+genres: rap, dance pop, slap house, pop
+audio_features:
+  danceability: 0.845
+  energy: 0.864
+  key: 7
+  loudness: -4.677
+  mode: 1
+  speechiness: 0.0786
+  acousticness: 0.577
+  instrumentalness: 0.000896
+  liveness: 0.0705
+  valence: 0.959
+  tempo: 166.531
+  id: 5unjCay0kUjuej5ebn4nS4
+  duration_ms: 164041
+  time_signature: 3
 
 
 name: Roll in Peace (feat. XXXTENTACION)
-artists: Kodak Black  XXXTENTACION  
-genres: miami hip hop, rap, florida drill, florida rap, emo rap, trap latino, melodic rap, trap
-danceability: 0.747
-energy: 0.524
-key: 10
-loudness: -6.807
-mode: 0
-speechiness: 0.245
-acousticness: 0.0306
-instrumentalness: 0
-liveness: 0.2
-valence: 0.363
-tempo: 140.053
-id: 40oKW22ZNNkEdZLJTScaQI
-duration_ms: 213132
-time_signature: 4
+artists: Kodak Black, XXXTENTACION
+genres: florida drill, rap, trap, florida rap, melodic rap, emo rap, trap latino, miami hip hop
+audio_features:
+  danceability: 0.747
+  energy: 0.524
+  key: 10
+  loudness: -6.807
+  mode: 0
+  speechiness: 0.245
+  acousticness: 0.0306
+  instrumentalness: 0
+  liveness: 0.2
+  valence: 0.363
+  tempo: 140.053
+  id: 40oKW22ZNNkEdZLJTScaQI
+  duration_ms: 213132
+  time_signature: 4
 
 
 name: IDGAF (feat. Yeat)
-artists: Drake  Yeat  
-genres: canadian hip hop, pluggnb, rap, canadian pop, hip hop, rage rap, pop rap
-danceability: 0.673
-energy: 0.672
-key: 8
-loudness: -8.577
-mode: 1
-speechiness: 0.224
-acousticness: 0.0466
-instrumentalness: 0.000284
-liveness: 0.193
-valence: 0.14
-tempo: 136.902
-id: 2YSzYUF3jWqb9YP9VXmpjE
-duration_ms: 260111
-time_signature: 4
+artists: Drake, Yeat
+genres: hip hop, rage rap, rap, pluggnb, canadian pop, pop rap, canadian hip hop
+audio_features:
+  danceability: 0.673
+  energy: 0.672
+  key: 8
+  loudness: -8.577
+  mode: 1
+  speechiness: 0.224
+  acousticness: 0.0466
+  instrumentalness: 0.000284
+  liveness: 0.193
+  valence: 0.14
+  tempo: 136.902
+  id: 2YSzYUF3jWqb9YP9VXmpjE
+  duration_ms: 260111
+  time_signature: 4
 
 
-name: Friesenjung
-artists: Ski Aggu  Joost  Otto Waalkes  
-genres: german hip hop, kabarett
-danceability: 0.777
-energy: 0.979
-key: 11
-loudness: -4.523
-mode: 0
-speechiness: 0.126
-acousticness: 0.0172
-instrumentalness: 0.000163
-liveness: 0.195
-valence: 0.896
-tempo: 160.999
-id: 6tAKikIvnoWfUeZrfkopLL
-duration_ms: 146087
-time_signature: 4
+name: Ca³a noc w samolocie
+artists: Kukon, Ka-Meal
+genres: polish hip hop, polish trap
+audio_features:
+  danceability: 0.609
+  energy: 0.424
+  key: 8
+  loudness: -12.94
+  mode: 1
+  speechiness: 0.293
+  acousticness: 0.448
+  instrumentalness: 0.0175
+  liveness: 0.131
+  valence: 0.545
+  tempo: 79.897
+  id: 1U0lB1JuOWkYXkYyad9XVv
+  duration_ms: 138500
+  time_signature: 4
 
 
-name: FE!N (feat. Playboi Carti)
-artists: Travis Scott  Playboi Carti  
-genres: pluggnb, rap, plugg, slap house, rage rap, atl hip hop
-danceability: 0.569
-energy: 0.882
-key: 3
-loudness: -2.777
-mode: 0
-speechiness: 0.06
-acousticness: 0.0316
-instrumentalness: 0
-liveness: 0.142
-valence: 0.201
-tempo: 148.038
-id: 42VsgItocQwOQC3XWZ8JNA
-duration_ms: 191701
-time_signature: 4
+name: Homecoming
+artists: Kanye West, Chris Martin
+genres: rap, hip hop, chicago rap
+audio_features:
+  danceability: 0.67
+  energy: 0.747
+  key: 1
+  loudness: -7.059
+  mode: 1
+  speechiness: 0.189
+  acousticness: 0.337
+  instrumentalness: 0
+  liveness: 0.115
+  valence: 0.918
+  tempo: 86.918
+  id: 4iz9lGMjU1lXS51oPmUmTe
+  duration_ms: 203493
+  time_signature: 4
 
 
-name: The fo Five
-artists: Ramirez  
-genres: cloud rap, dark trap, phonk
-danceability: 0.712
-energy: 0.922
-key: 10
-loudness: -5.261
-mode: 0
-speechiness: 0.0677
-acousticness: 0.218
-instrumentalness: 2.54e-05
-liveness: 0.604
-valence: 0.709
-tempo: 176.078
-id: 0p2GWx4qFzfq9UWd0SrODU
-duration_ms: 201818
-time_signature: 4
-
-
-name: King Tulip
-artists: $uicideboy$  
-genres: new orleans rap, cloud rap, underground hip hop, dark trap
-danceability: 0.584
-energy: 0.576
-key: 10
-loudness: -9.435
-mode: 0
-speechiness: 0.449
-acousticness: 0.14
-instrumentalness: 0
-liveness: 0.111
-valence: 0.261
-tempo: 120.765
-id: 6cpslq4nypOt9NhLPIwY6c
-duration_ms: 185218
-time_signature: 4
-
-
-name: FLOWIN
-artists: 3weeksin  
-genres: Unknown
-danceability: 0.721
-energy: 0.869
-key: 1
-loudness: -5.906
-mode: 1
-speechiness: 0.347
-acousticness: 0.708
-instrumentalness: 0
-liveness: 0.167
-valence: 0.442
-tempo: 143.172
-id: 1zjCMjVRe0QpsGApru4azp
-duration_ms: 120208
-time_signature: 4
-
-
-name: 10,000 Degrees
-artists: $uicideboy$  
-genres: new orleans rap, cloud rap, underground hip hop, dark trap
-danceability: 0.692
-energy: 0.719
-key: 1
-loudness: -8.277
-mode: 1
-speechiness: 0.216
-acousticness: 0.0214
-instrumentalness: 0
-liveness: 0.105
-valence: 0.332
-tempo: 156.013
-id: 1uksi19G4rvXZLJzmb0uDx
-duration_ms: 189109
-time_signature: 4
+name: Ocean Side $uicide
+artists: $uicideboy$
+genres: underground hip hop, cloud rap, dark trap, new orleans rap
+audio_features:
+  danceability: 0.834
+  energy: 0.577
+  key: 2
+  loudness: -6.281
+  mode: 1
+  speechiness: 0.118
+  acousticness: 0.179
+  instrumentalness: 0
+  liveness: 0.118
+  valence: 0.305
+  tempo: 110.038
+  id: 1jZyHGDyjNuHTmww9HMSM3
+  duration_ms: 183318
+  time_signature: 4
 
 
 name: 1000 Blunts
-artists: $uicideboy$  
-genres: new orleans rap, cloud rap, underground hip hop, dark trap
-danceability: 0.83
-energy: 0.698
-key: 5
-loudness: -6.517
-mode: 0
-speechiness: 0.077
-acousticness: 0.224
-instrumentalness: 1.02e-06
-liveness: 0.191
-valence: 0.595
-tempo: 132.99
-id: 09riz9pAPJyYYDVynE5xxY
-duration_ms: 175476
-time_signature: 4
+artists: $uicideboy$
+genres: underground hip hop, cloud rap, dark trap, new orleans rap
+audio_features:
+  danceability: 0.83
+  energy: 0.698
+  key: 5
+  loudness: -6.517
+  mode: 0
+  speechiness: 0.077
+  acousticness: 0.224
+  instrumentalness: 1.02e-06
+  liveness: 0.191
+  valence: 0.595
+  tempo: 132.99
+  id: 09riz9pAPJyYYDVynE5xxY
+  duration_ms: 175476
+  time_signature: 4
 
 
-name: Nicotine Patches
-artists: $uicideboy$  
-genres: new orleans rap, cloud rap, underground hip hop, dark trap
-danceability: 0.747
-energy: 0.576
-key: 0
-loudness: -9.764
-mode: 0
-speechiness: 0.119
-acousticness: 0.0189
-instrumentalness: 0.000716
-liveness: 0.26
-valence: 0.412
-tempo: 145.929
-id: 2qXOuks93SBqKbQofW208w
-duration_ms: 156034
-time_signature: 4
+name: Watch This - ARIZONATEARS Pluggnb Remix
+artists: Lil Uzi Vert, sped up nightcore, ARIZONATEARS
+genres: hip hop, rage rap, rap, sped up, trap, philly rap, melodic rap, nightcore
+audio_features:
+  danceability: 0.686
+  energy: 0.897
+  key: 11
+  loudness: -7.18
+  mode: 0
+  speechiness: 0.0386
+  acousticness: 0.0103
+  instrumentalness: 0.103
+  liveness: 0.153
+  valence: 0.355
+  tempo: 129.975
+  id: 0FA4wrjDJvJTTU8AepZTup
+  duration_ms: 163139
+  time_signature: 4
 
 
-name: The Number You Have Dialed Is Not in Service
-artists: $uicideboy$  
-genres: new orleans rap, cloud rap, underground hip hop, dark trap
-danceability: 0.707
-energy: 0.531
-key: 7
-loudness: -6.754
-mode: 0
-speechiness: 0.206
-acousticness: 0.684
-instrumentalness: 0
-liveness: 0.163
-valence: 0.438
-tempo: 140.952
-id: 4gAtj23mqTx5pjfkzVaXhh
-duration_ms: 165971
-time_signature: 4
+name: Pop Out
+artists: KillBunk, Yeat
+genres: pluggnb, rage rap
+audio_features:
+  danceability: 0.557
+  energy: 0.522
+  key: 9
+  loudness: -13.492
+  mode: 1
+  speechiness: 0.357
+  acousticness: 0.0632
+  instrumentalness: 0
+  liveness: 0.355
+  valence: 0.365
+  tempo: 166.032
+  id: 5M5FbqhEDQuhFeKumZVTjj
+  duration_ms: 179618
+  time_signature: 4
 
 
-name: I KNOW ?
-artists: Travis Scott  
-genres: slap house, rap
-danceability: 0.927
-energy: 0.619
-key: 5
-loudness: -4.441
-mode: 0
-speechiness: 0.0539
-acousticness: 0.0186
-instrumentalness: 0
-liveness: 0.104
-valence: 0.817
-tempo: 117.995
-id: 6wsqVwoiVH2kde4k4KKAFU
-duration_ms: 211582
-time_signature: 4
+name: Raindrops (Insane) [with Travis Scott]
+artists: Metro Boomin, Travis Scott
+genres: rap, slap house
+audio_features:
+  danceability: 0.804
+  energy: 0.539
+  key: 7
+  loudness: -5.949
+  mode: 0
+  speechiness: 0.0391
+  acousticness: 0.0972
+  instrumentalness: 0
+  liveness: 0.347
+  valence: 0.12
+  tempo: 111.975
+  id: 1pacwLXyRO47ka0v6LTIiY
+  duration_ms: 188587
+  time_signature: 4
 
 
-name: Paris
-artists: $uicideboy$  
-genres: new orleans rap, cloud rap, underground hip hop, dark trap
-danceability: 0.849
-energy: 0.648
-key: 7
-loudness: -6.188
-mode: 1
-speechiness: 0.0835
-acousticness: 0.0706
-instrumentalness: 0.00636
-liveness: 0.0984
-valence: 0.195
-tempo: 106.058
-id: 6tO5bxNnMuh1c3cziSpecA
-duration_ms: 111020
-time_signature: 4
+name: FE!N (feat. Playboi Carti)
+artists: Travis Scott, Playboi Carti
+genres: slap house, rage rap, rap, atl hip hop, pluggnb, plugg
+audio_features:
+  danceability: 0.569
+  energy: 0.882
+  key: 3
+  loudness: -2.777
+  mode: 0
+  speechiness: 0.06
+  acousticness: 0.0316
+  instrumentalness: 0
+  liveness: 0.142
+  valence: 0.201
+  tempo: 148.038
+  id: 42VsgItocQwOQC3XWZ8JNA
+  duration_ms: 191701
+  time_signature: 4
 
 
-name: O Pana!
-artists: $uicideboy$  
-genres: new orleans rap, cloud rap, underground hip hop, dark trap
-danceability: 0.797
-energy: 0.504
-key: 0
-loudness: -6.538
-mode: 1
-speechiness: 0.114
-acousticness: 0.0199
-instrumentalness: 2.46e-05
-liveness: 0.198
-valence: 0.178
-tempo: 114.994
-id: 0cQvicmQo8syJ2Zv8aYDfN
-duration_ms: 128418
-time_signature: 4
+name: BREAKDALAW2k16
+artists: $uicideboy$, Pouya
+genres: underground hip hop, dark trap, cloud rap, miami hip hop, new orleans rap
+audio_features:
+  danceability: 0.761
+  energy: 0.684
+  key: 1
+  loudness: -8.797
+  mode: 1
+  speechiness: 0.0821
+  acousticness: 0.00766
+  instrumentalness: 0
+  liveness: 0.117
+  valence: 0.184
+  tempo: 87.017
+  id: 1Fy64jklSy06F9KuP4zHIs
+  duration_ms: 110395
+  time_signature: 4
 
 
-name: Hyyerr
-artists: Kid Cudi  Chip Tha Ripper  
-genres: pop rap, hip hop, ohio hip hop, rap
-danceability: 0.72
-energy: 0.647
-key: 4
-loudness: -4.091
-mode: 0
-speechiness: 0.093
-acousticness: 0.259
-instrumentalness: 0
-liveness: 0.641
-valence: 0.565
-tempo: 120.031
-id: 4XQgeG5VBvvf0xRqNPsYFc
-duration_ms: 212107
-time_signature: 4
+name: New Gold (feat. Tame Impala and Bootie Brown)
+artists: Gorillaz, Tame Impala, Bootie Brown
+genres: rock, modern rock, australian psych, neo-psychedelic, alternative hip hop
+audio_features:
+  danceability: 0.695
+  energy: 0.923
+  key: 1
+  loudness: -3.93
+  mode: 0
+  speechiness: 0.0522
+  acousticness: 0.0425
+  instrumentalness: 0.0469
+  liveness: 0.116
+  valence: 0.551
+  tempo: 108.014
+  id: 64dLd6rVqDLtkXFYrEUHIU
+  duration_ms: 215150
+  time_signature: 3
 
 
-name: Coma
-artists: $uicideboy$  
-genres: new orleans rap, cloud rap, underground hip hop, dark trap
-danceability: 0.689
-energy: 0.781
-key: 8
-loudness: -4.97
-mode: 1
-speechiness: 0.052
-acousticness: 0.0178
-instrumentalness: 0.00226
-liveness: 0.618
-valence: 0.562
-tempo: 119.939
-id: 73hmZZ7HyLgUQj2DaybfBb
-duration_ms: 137772
-time_signature: 4
+name: Online
+artists: Hodak, Kukon, 2K, Sergiusz
+genres: polish hip hop, polish trap, polish alternative rap
+audio_features:
+  danceability: 0.6
+  energy: 0.657
+  key: 10
+  loudness: -7.746
+  mode: 0
+  speechiness: 0.117
+  acousticness: 0.206
+  instrumentalness: 0.000193
+  liveness: 0.11
+  valence: 0.269
+  tempo: 99.917
+  id: 724YuUdRGsBgyrcYLKM42d
+  duration_ms: 160729
+  time_signature: 4
 
 
-name: 2nd Hand
-artists: $uicideboy$  
-genres: new orleans rap, cloud rap, underground hip hop, dark trap
-danceability: 0.933
-energy: 0.424
-key: 1
-loudness: -6.686
-mode: 1
-speechiness: 0.127
-acousticness: 0.0307
-instrumentalness: 0
-liveness: 0.101
-valence: 0.0775
-tempo: 139.977
-id: 3YeQsJs1FdLI3w0BqWwpmk
-duration_ms: 123469
-time_signature: 4
-
-
-name: Ugliest
-artists: $uicideboy$  
-genres: new orleans rap, cloud rap, underground hip hop, dark trap
-danceability: 0.752
-energy: 0.55
-key: 5
-loudness: -7.166
-mode: 0
-speechiness: 0.362
-acousticness: 0.172
-instrumentalness: 0.0148
-liveness: 0.14
-valence: 0.405
-tempo: 174.073
-id: 2Q9nA56DKKJhj4cHMbHlAS
-duration_ms: 178131
-time_signature: 4
-
-
-name: Krewe Du Vieux (Comedy & Tragedy)
-artists: $uicideboy$  
-genres: new orleans rap, cloud rap, underground hip hop, dark trap
-danceability: 0.826
-energy: 0.597
-key: 0
-loudness: -4.299
-mode: 1
-speechiness: 0.0523
-acousticness: 0.0262
-instrumentalness: 0.0116
-liveness: 0.0962
-valence: 0.137
-tempo: 101.979
-id: 7yGX7bh3zJx4dM7ocSY4wY
-duration_ms: 104472
-time_signature: 4
+name: ohs 2022
+artists: Kukon, thk
+genres: polish hip hop, polish trap
+audio_features:
+  danceability: 0.743
+  energy: 0.616
+  key: 2
+  loudness: -7.993
+  mode: 1
+  speechiness: 0.238
+  acousticness: 0.641
+  instrumentalness: 1.17e-05
+  liveness: 0.14
+  valence: 0.599
+  tempo: 92.014
+  id: 5M3cjSLqeyNxehj7Tn4hGw
+  duration_ms: 156522
+  time_signature: 4
 
 
 name: Kill Yourself (Part IV)
-artists: $uicideboy$  
-genres: new orleans rap, cloud rap, underground hip hop, dark trap
-danceability: 0.765
-energy: 0.675
-key: 11
-loudness: -4.441
-mode: 0
-speechiness: 0.0683
-acousticness: 0.464
-instrumentalness: 5.29e-06
-liveness: 0.133
-valence: 0.192
-tempo: 117.99
-id: 3LLYTletE6uiRZ0hgMSrCN
-duration_ms: 113972
-time_signature: 4
+artists: $uicideboy$
+genres: underground hip hop, cloud rap, dark trap, new orleans rap
+audio_features:
+  danceability: 0.765
+  energy: 0.675
+  key: 11
+  loudness: -4.441
+  mode: 0
+  speechiness: 0.0683
+  acousticness: 0.464
+  instrumentalness: 5.29e-06
+  liveness: 0.133
+  valence: 0.192
+  tempo: 117.99
+  id: 3LLYTletE6uiRZ0hgMSrCN
+  duration_ms: 113972
+  time_signature: 4
 
 
-name: Long Gone (Save Me from This Hell)
-artists: $uicideboy$  
-genres: new orleans rap, cloud rap, underground hip hop, dark trap
-danceability: 0.712
-energy: 0.649
-key: 9
-loudness: -7.111
-mode: 0
-speechiness: 0.0838
-acousticness: 0.158
-instrumentalness: 8.13e-06
-liveness: 0.213
-valence: 0.183
-tempo: 140.032
-id: 1a6GdgTR05j7hTgKPsK3ZM
-duration_ms: 138765
-time_signature: 4
+name: Distance
+artists: KILLY
+genres: melodic rap, canadian trap, canadian hip hop
+audio_features:
+  danceability: 0.621
+  energy: 0.558
+  key: 7
+  loudness: -5.881
+  mode: 1
+  speechiness: 0.0728
+  acousticness: 0.661
+  instrumentalness: 0
+  liveness: 0.112
+  valence: 0.68
+  tempo: 183.843
+  id: 6ytguNuHyIOozRmBOXPjns
+  duration_ms: 148707
+  time_signature: 4
 
 
-name: Carrollton
-artists: $uicideboy$  
-genres: new orleans rap, cloud rap, underground hip hop, dark trap
-danceability: 0.848
-energy: 0.52
-key: 5
-loudness: -10.663
-mode: 0
-speechiness: 0.501
-acousticness: 0.00225
-instrumentalness: 0.000799
-liveness: 0.679
-valence: 0.304
-tempo: 149.996
-id: 2XSrt1dcuOXPgl3B4bxmBz
-duration_ms: 203897
-time_signature: 4
+name: Do What I Want
+artists: Kid Cudi
+genres: rap, pop rap, hip hop, ohio hip hop
+audio_features:
+  danceability: 0.825
+  energy: 0.885
+  key: 1
+  loudness: -3.928
+  mode: 1
+  speechiness: 0.126
+  acousticness: 0.0851
+  instrumentalness: 6.62e-06
+  liveness: 0.114
+  valence: 0.372
+  tempo: 154.998
+  id: 5OIz27S6SQOJtweneBd6QP
+  duration_ms: 172053
+  time_signature: 4
 
 
-name: 122 Days
-artists: $uicideboy$  
-genres: new orleans rap, cloud rap, underground hip hop, dark trap
-danceability: 0.748
-energy: 0.381
-key: 6
-loudness: -13.221
-mode: 1
-speechiness: 0.362
-acousticness: 0.409
-instrumentalness: 7.04e-06
-liveness: 0.571
-valence: 0.0832
-tempo: 130.944
-id: 77o41Py1xkwaxs3200SKhW
-duration_ms: 184324
-time_signature: 4
+name: TEEN
+artists: IVOXYGEN
+genres: Unknown
+audio_features:
+  danceability: 0.743
+  energy: 0.593
+  key: 3
+  loudness: -9.17
+  mode: 0
+  speechiness: 0.0565
+  acousticness: 0.017
+  instrumentalness: 0.33
+  liveness: 0.115
+  valence: 0.425
+  tempo: 136.998
+  id: 5UfXCUt7n2Szb02OvN5S8A
+  duration_ms: 185808
+  time_signature: 4
+
+
+name: villain
+artists: LOAT!
+genres: aesthetic rap
+audio_features:
+  danceability: 0.681
+  energy: 0.769
+  key: 1
+  loudness: -7.963
+  mode: 1
+  speechiness: 0.238
+  acousticness: 0.347
+  instrumentalness: 0
+  liveness: 0.171
+  valence: 0.544
+  tempo: 93.988
+  id: 2jh8BwcLuoFRE95BlsMPzV
+  duration_ms: 158616
+  time_signature: 4
+
+
+name: Actavis
+artists: Young Igi
+genres: polish hip hop, polish trap
+audio_features:
+  danceability: 0.716
+  energy: 0.609
+  key: 7
+  loudness: -7.069
+  mode: 1
+  speechiness: 0.172
+  acousticness: 0.194
+  instrumentalness: 0
+  liveness: 0.084
+  valence: 0.599
+  tempo: 80.04
+  id: 1DhCoelNotY6YjRKOVtae5
+  duration_ms: 171067
+  time_signature: 1
+
+
+name: Shinigami Flow
+artists: KILLY, Jaegen
+genres: melodic rap, canadian trap, canadian hip hop
+audio_features:
+  danceability: 0.709
+  energy: 0.736
+  key: 1
+  loudness: -8.419
+  mode: 0
+  speechiness: 0.0934
+  acousticness: 0.282
+  instrumentalness: 0
+  liveness: 0.148
+  valence: 0.521
+  tempo: 155.888
+  id: 7nqXeFOVEc7rJQSSpFzVH9
+  duration_ms: 103538
+  time_signature: 4
+
+
+name: Y?
+artists: KILLY
+genres: melodic rap, canadian trap, canadian hip hop
+audio_features:
+  danceability: 0.678
+  energy: 0.646
+  key: 1
+  loudness: -7.636
+  mode: 1
+  speechiness: 0.0575
+  acousticness: 0.172
+  instrumentalness: 0
+  liveness: 0.218
+  valence: 0.202
+  tempo: 119.932
+  id: 2Mytg2OcqnK15ZfmGx9PqB
+  duration_ms: 143880
+  time_signature: 4
+
+
+name: No Romance
+artists: 16yrold, KILLY
+genres: melodic rap, pluggnb, canadian trap, canadian hip hop
+audio_features:
+  danceability: 0.802
+  energy: 0.424
+  key: 1
+  loudness: -11.366
+  mode: 0
+  speechiness: 0.0627
+  acousticness: 0.603
+  instrumentalness: 7.73e-06
+  liveness: 0.108
+  valence: 0.476
+  tempo: 140.069
+  id: 1EuVCg1G7fVjuhKurU7m2b
+  duration_ms: 137200
+  time_signature: 4
+
+
+name: Trance (with Travis Scott & Young Thug)
+artists: Metro Boomin, Travis Scott, Young Thug
+genres: slap house, atl trap, rap, trap, atl hip hop, melodic rap, gangster rap
+audio_features:
+  danceability: 0.765
+  energy: 0.552
+  key: 1
+  loudness: -7.524
+  mode: 0
+  speechiness: 0.309
+  acousticness: 0.175
+  instrumentalness: 0
+  liveness: 0.193
+  valence: 0.492
+  tempo: 119.476
+  id: 5wG3HvLhF6Y5KTGlK0IW3J
+  duration_ms: 194787
+  time_signature: 4
+
+
+name: King Tulip
+artists: $uicideboy$
+genres: underground hip hop, cloud rap, dark trap, new orleans rap
+audio_features:
+  danceability: 0.584
+  energy: 0.576
+  key: 10
+  loudness: -9.435
+  mode: 0
+  speechiness: 0.449
+  acousticness: 0.14
+  instrumentalness: 0
+  liveness: 0.111
+  valence: 0.261
+  tempo: 120.765
+  id: 6cpslq4nypOt9NhLPIwY6c
+  duration_ms: 185218
+  time_signature: 4
+
+
+name: I KNOW ?
+artists: Travis Scott
+genres: rap, slap house
+audio_features:
+  danceability: 0.927
+  energy: 0.619
+  key: 5
+  loudness: -4.441
+  mode: 0
+  speechiness: 0.0539
+  acousticness: 0.0186
+  instrumentalness: 0
+  liveness: 0.104
+  valence: 0.817
+  tempo: 117.995
+  id: 6wsqVwoiVH2kde4k4KKAFU
+  duration_ms: 211582
+  time_signature: 4
+
+
+name: zachód na blokach
+artists: Kukon, Chris Carson
+genres: polish hip hop, polish trap
+audio_features:
+  danceability: 0.696
+  energy: 0.778
+  key: 11
+  loudness: -7.063
+  mode: 1
+  speechiness: 0.183
+  acousticness: 0.121
+  instrumentalness: 0.000617
+  liveness: 0.33
+  valence: 0.906
+  tempo: 164.02
+  id: 4HvREP0Mz6v3f31RzVVH8S
+  duration_ms: 187317
+  time_signature: 4
+
+
+name: Out thë way
+artists: Yeat
+genres: pluggnb, rage rap
+audio_features:
+  danceability: 0.763
+  energy: 0.617
+  key: 4
+  loudness: -7.509
+  mode: 0
+  speechiness: 0.246
+  acousticness: 0.23
+  instrumentalness: 1.96e-06
+  liveness: 0.276
+  valence: 0.811
+  tempo: 128.134
+  id: 6IyoLWzljeR3ldQo4KWHT6
+  duration_ms: 150242
+  time_signature: 4
+
+
+name: 4 am in Metawers
+artists: Kukon, Kosmos
+genres: polish hip hop, polish trap
+audio_features:
+  danceability: 0.772
+  energy: 0.601
+  key: 6
+  loudness: -5.916
+  mode: 0
+  speechiness: 0.293
+  acousticness: 0.369
+  instrumentalness: 0.000143
+  liveness: 0.124
+  valence: 0.413
+  tempo: 84.028
+  id: 2ZbSIu4PbLIcyGE4LwSGfB
+  duration_ms: 160000
+  time_signature: 4
+
+
+name: new york
+artists: Kukon, Chris Carson, Phunk'ill
+genres: polish hip hop, polish trap
+audio_features:
+  danceability: 0.771
+  energy: 0.525
+  key: 1
+  loudness: -8.639
+  mode: 1
+  speechiness: 0.405
+  acousticness: 0.441
+  instrumentalness: 0.00012
+  liveness: 0.0835
+  valence: 0.139
+  tempo: 179.93
+  id: 4WyR2dK5O9Zj8jTitKr1Gd
+  duration_ms: 178667
+  time_signature: 4
+
+
+name: po staremu
+artists: Kukon, Oskar83
+genres: polish hip hop, polish trap
+audio_features:
+  danceability: 0.718
+  energy: 0.438
+  key: 2
+  loudness: -7.646
+  mode: 1
+  speechiness: 0.326
+  acousticness: 0.439
+  instrumentalness: 2.3e-06
+  liveness: 0.168
+  valence: 0.711
+  tempo: 178.057
+  id: 00rijNLZib3FMdddbYIcvA
+  duration_ms: 152360
+  time_signature: 4
+
+
+name: Niagara Falls (Foot or 2) [with Travis Scott & 21 Savage]
+artists: Metro Boomin, Travis Scott, 21 Savage
+genres: atl hip hop, rap, slap house, hip hop
+audio_features:
+  danceability: 0.667
+  energy: 0.648
+  key: 2
+  loudness: -5.117
+  mode: 1
+  speechiness: 0.284
+  acousticness: 0.175
+  instrumentalness: 0.000155
+  liveness: 0.147
+  valence: 0.254
+  tempo: 87.975
+  id: 4WuOWVnAqvEQxgSRrspBgt
+  duration_ms: 207307
+  time_signature: 4
+
+
+name: O Pana!
+artists: $uicideboy$
+genres: underground hip hop, cloud rap, dark trap, new orleans rap
+audio_features:
+  danceability: 0.797
+  energy: 0.504
+  key: 0
+  loudness: -6.538
+  mode: 1
+  speechiness: 0.114
+  acousticness: 0.0199
+  instrumentalness: 2.46e-05
+  liveness: 0.198
+  valence: 0.178
+  tempo: 114.994
+  id: 0cQvicmQo8syJ2Zv8aYDfN
+  duration_ms: 128418
+  time_signature: 4
+
+
+name: pudelek
+artists: Kukon, Ka-Meal
+genres: polish hip hop, polish trap
+audio_features:
+  danceability: 0.722
+  energy: 0.643
+  key: 7
+  loudness: -7.993
+  mode: 1
+  speechiness: 0.308
+  acousticness: 0.617
+  instrumentalness: 5.11e-05
+  liveness: 0.112
+  valence: 0.104
+  tempo: 90.974
+  id: 3vVt4nyi6oq6JgkVSlo1jf
+  duration_ms: 189890
+  time_signature: 4
+
+
+name: Dark Fantasy
+artists: Kanye West
+genres: rap, hip hop, chicago rap
+audio_features:
+  danceability: 0.599
+  energy: 0.587
+  key: 5
+  loudness: -5.919
+  mode: 1
+  speechiness: 0.0423
+  acousticness: 0.274
+  instrumentalness: 0
+  liveness: 0.167
+  valence: 0.373
+  tempo: 87.998
+  id: 7yNK27ZTpHew0c55VvIJgm
+  duration_ms: 280787
+  time_signature: 4
+
+
+name: pudelek
+artists: Kukon, Ka-Meal
+genres: polish hip hop, polish trap
+audio_features:
+  danceability: 0.722
+  energy: 0.643
+  key: 7
+  loudness: -7.993
+  mode: 1
+  speechiness: 0.308
+  acousticness: 0.617
+  instrumentalness: 5.11e-05
+  liveness: 0.112
+  valence: 0.104
+  tempo: 90.974
+  id: 1EtczShQkkQyte3jazyAks
+  duration_ms: 189890
+  time_signature: 4
+
+
+name: 10,000 Degrees
+artists: $uicideboy$
+genres: underground hip hop, cloud rap, dark trap, new orleans rap
+audio_features:
+  danceability: 0.692
+  energy: 0.719
+  key: 1
+  loudness: -8.277
+  mode: 1
+  speechiness: 0.216
+  acousticness: 0.0214
+  instrumentalness: 0
+  liveness: 0.105
+  valence: 0.332
+  tempo: 156.013
+  id: 1uksi19G4rvXZLJzmb0uDx
+  duration_ms: 189109
+  time_signature: 4
 
 
