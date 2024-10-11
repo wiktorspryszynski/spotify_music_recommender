@@ -1,5 +1,7 @@
 # spotify_music_recommender
 
+### Please note that this project is still a WORK_IN_PROGRESS
+
 ## Introduction
 Spotify Music Recommender is an app that allows you to log in via your Spotify account, see your top tracks and get a (play)list of recommended songs that best suit your liking.
 
@@ -37,4 +39,4 @@ Click [HERE](https://developer.spotify.com/dashboard) to make your own app using
 
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
-You can reach me through e-mail (spryszynskiwiktor@gmail.com).
+You can reach me through my e-mail: spryszynskiwiktor@gmail.com.

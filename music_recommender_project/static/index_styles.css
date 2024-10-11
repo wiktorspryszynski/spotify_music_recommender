@@ -30,24 +30,28 @@ body {
 }
 
 .main-button {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
     margin-top: 40px;
-    padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     text-decoration: none;
-    border-radius: 5px;
-
-    background-color: #070807; /* Green background color */
-    color: rgb(30, 215, 96); /* White text color */
-    padding: 15px 30px; /* Padding around text */
-    border: none; /* No border */
+    background-color: #070807;
+    color: rgb(30, 215, 96);
+    padding: 10px 30px 15px;
+    border: none;
     border-radius: 20px; /* Rounded corners */
-    font-size: 24px; /* Font size */
+    font-size: 24px;
+    font-weight: 500;
     transition: background-color 0.3s ease; /* Smooth background color transition */
+    letter-spacing: -0.02em;
 }
 
 .main-button>img {
-    transform: translate(0px, 7px);
+    /* transform: translate(0px, 7px); */
+    vertical-align: middle;
+    margin-left: 5px;
 }
 
 .main-button:hover {

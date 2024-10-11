@@ -14,8 +14,8 @@ class SpotifyAuth:
         self.redirect_uri = redirect_uri
         self.show_dialog = show_dialog
         
-        # Set the scope
-        self.scope = self.build_viable_scope(scope) if scope else ''
+        #self.scope = self.build_viable_scope(scope) if scope else ''
+        self.scope = ' '.join(scope) if scope else ''
         self.auth_uri = self.build_auth_uri()
         self.access_token = None
     
@@ -31,42 +31,42 @@ class SpotifyAuth:
             uri += f'&show_dialog={self.show_dialog}'
         return uri
 
-    def build_viable_scope(self, scope: list[str]):
-        """https://developer.spotify.com/documentation/web-api/concepts/scopes"""
-        VIABLE_SCOPES = [
-            'ugc-image-upload',
-            'user-read-playback-state',
-            'user-modify-playback-state',
-            'user-read-currently-playing',
-            'app-remote-control',
-            'streaming',
-            'playlist-read-private',
-            'playlist-read-collaborative',
-            'playlist-modify-private',
-            'playlist-modify-public',
-            'user-follow-modify',
-            'user-follow-read',
-            'user-read-playback-position',
-            'user-top-read',
-            'user-read-recently-played',
-            'user-library-modify',
-            'user-library-read',
-            'user-read-email',
-            'user-read-private',
-            'user-soa-link',
-            'user-soa-unlink',
-            'soa-manage-entitlements',
-            'soa-manage-partner',
-            'soa-create-partner'
-        ]
+    # def build_viable_scope(self, scope: list[str]):
+    #     """https://developer.spotify.com/documentation/web-api/concepts/scopes"""
+    #     VIABLE_SCOPES = [
+    #         'ugc-image-upload',
+    #         'user-read-playback-state',
+    #         'user-modify-playback-state',
+    #         'user-read-currently-playing',
+    #         'app-remote-control',
+    #         'streaming',
+    #         'playlist-read-private',
+    #         'playlist-read-collaborative',
+    #         'playlist-modify-private',
+    #         'playlist-modify-public',
+    #         'user-follow-modify',
+    #         'user-follow-read',
+    #         'user-read-playback-position',
+    #         'user-top-read',
+    #         'user-read-recently-played',
+    #         'user-library-modify',
+    #         'user-library-read',
+    #         'user-read-email',
+    #         'user-read-private',
+    #         'user-soa-link',
+    #         'user-soa-unlink',
+    #         'soa-manage-entitlements',
+    #         'soa-manage-partner',
+    #         'soa-create-partner'
+    #     ]
         
-        viable = []
+    #     viable = []
         
-        for s in list(set(scope)):
-            if s in VIABLE_SCOPES:
-                viable.append(s)
+    #     for s in list(set(scope)):
+    #         if s in VIABLE_SCOPES:
+    #             viable.append(s)
         
-        return ' '.join(viable)
+    #     return ' '.join(viable)
     
     def encode_URI_component(self, component: str) -> str:
         """Equivalent to encodeURIComponent in JavaScript."""

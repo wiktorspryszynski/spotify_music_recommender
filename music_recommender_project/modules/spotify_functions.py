@@ -5,9 +5,6 @@ import base64
 from requests import post, get
 from urllib.parse import urlparse
 
-# import spotipy
-
-
 load_dotenv()
 
 client_id = os.getenv("CLIENT_ID")
@@ -40,10 +37,11 @@ def current_users_profile(token):
     result = get(url=url, headers=headers)
     json_result = json.loads(result.content)
 
-    if len(json_result) == 0:
-        print("User not found")
-        return None
-    return json_result
+    result = get(url=url, headers=headers)
+    if result.status_code == 200:
+        json_result = json.loads(result.content)
+        return json_result
+    return None
 
 
 def get_artist_info(token, artist_name):
@@ -52,13 +50,11 @@ def get_artist_info(token, artist_name):
     query = f"q={artist_name}&type=artist&limit=1"
     query_url = url + query
 
-    result = get(url=query_url, headers=headers)
-    json_result = json.loads(result.content)
-
-    if len(json_result) == 0:
-        print("No artist found")
-        return None
-    return json_result['artists']['items'][0]
+    result = get(url=url, headers=headers)
+    if result.status_code == 200:
+        json_result = json.loads(result.content)
+        return json_result['artists']['items'][0]
+    return None
 
 
 def get_artist_id(token, artist_name):
@@ -73,12 +69,11 @@ def get_songs_by_artist(token, artist_id):
     headers = get_auth_header(token)
 
     result = get(url=url, headers=headers)
-    json_result = json.loads(result.content)
+    if result.status_code == 200:
+        json_result = json.loads(result.content)
+        return json_result["tracks"]
+    return None
 
-    if len(json_result) == 0:
-        print("No artist's top tracks found")
-        return None
-    return json_result["tracks"]
 
 
 def get_current_users_top_tracks(token, limit: int = 20, time_range: str = "medium_term"):
@@ -93,12 +88,10 @@ def get_current_users_top_tracks(token, limit: int = 20, time_range: str = "medi
     headers = get_auth_header(token)
 
     result = get(url=url, headers=headers)
-    json_result = json.loads(result.content)
-
-    if len(json_result) == 0:
-        print("No user's top tracks found")
-        return None
-    return json_result
+    if result.status_code == 200:
+        json_result = json.loads(result.content)
+        return json_result
+    return None
 
 def get_current_users_saved_songs(token, limit: int = 20, offset: int = 0, market: str = ""):
     '''
@@ -110,20 +103,14 @@ def get_current_users_saved_songs(token, limit: int = 20, offset: int = 0, marke
     url = f"https://api.spotify.com/v1/me/tracks/?limit={limit}&offset={offset}"
     headers = get_auth_header(token)
     
-    if market != "":
+    if market:
         url = f'?market={market}'
     
     result = get(url=url, headers=headers)
-    # if result.status_code == 404:
-    #     print("result status 404")
-    #     return None
-    
-    json_result = json.loads(result.content)
-
-    if len(json_result) == 0:
-        print("No user's top tracks found")
-        return None
-    return json_result
+    if result.status_code == 200:
+        json_result = json.loads(result.content)
+        return json_result
+    return None
 
 def get_current_users_top_artists(token, limit: int = 20, time_range: str = "medium_term"):
     '''
@@ -137,12 +124,10 @@ def get_current_users_top_artists(token, limit: int = 20, time_range: str = "med
     headers = get_auth_header(token)
 
     result = get(url=url, headers=headers)
-    json_result = json.loads(result.content)
-
-    if len(json_result) == 0:
-        print("No user's top artists found")
-        return None
-    return json_result
+    if result.status_code == 200:
+        json_result = json.loads(result.content)
+        return json_result
+    return None
 
 def get_songs_audio_features(token, track_list: list[str]):
     """
@@ -150,24 +135,113 @@ def get_songs_audio_features(token, track_list: list[str]):
 
         :param track_list: list of ID's of songs to get audio features of
     """
-    ids = '%2C'.join(track_list) # '%2C' is a URL-encoded comma
+    ids = ','.join(track_list)
     url = f'https://api.spotify.com/v1/audio-features?ids={ids}'
     headers = get_auth_header(token)
 
     result = get(url=url, headers=headers)
-    json_result = json.loads(result.content)
-
-    return json_result['audio_features']
+    if result.status_code == 200:
+        json_result = json.loads(result.content)
+        return json_result['audio_features']
+    return None
 
 def get_artist_by_id(token, artist_id: str):
+    """Fetch info about artist by using his/hers Spotify ID (ID can be obtained using get_artist_id() function)
+
+    Args:
+        token : self explanatory
+        artist_id (str): Artist's Spotify ID
+
+    Returns:
+        JSON object with artist's info (including genres!)
+    """
     url = f'https://api.spotify.com/v1/artists/{artist_id}'
-    # print(url)
+    headers = get_auth_header(token)
+
+    result = get(url=url, headers=headers)
+    if result.status_code == 200:
+        json_result = json.loads(result.content)
+        return json_result
+    return None
+
+
+def get_several_artists_by_id(token, artists_id: list[str]):
+    """Fetch info about multiple (up to 50 at a time) artists by using Spotify ID's (IDs can be obtained using get_artist_id() function)
+
+    Args:
+        token : self explanatory
+        artist_id (list(str)): list of artist's Spotify IDs
+
+    Returns:
+        JSON object with artist's info (including genres!)
+    """
+    ids = ",".join(artists_id)    # comma separeated artists id's
+    url = f'https://api.spotify.com/v1/artists/?ids={ids}'
     headers = get_auth_header(token)
 
     result = get(url=url, headers=headers)
     json_result = json.loads(result.content)
     
-    if len(json_result) == 0:
-        print("No artist found")
+    if "artists" not in json_result:
+        print("No artist found or error in response")
         return None
-    return json_result
+
+    return json_result["artists"]
+
+
+
+def get_relevant_track_info(track_data):
+    """
+    Extracts relevant information from Spotify track data, handling both types of structures.
+
+    Args:
+    track_data (dict): The track dictionary fetched from Spotify's API.
+
+    Returns:
+    dict: A dictionary with relevant song features for ML.
+    """
+    
+    if 'track' in track_data:
+        track = track_data['track']
+        audio_features = track_data.get('audio_features', {})
+        artist_genres = track_data.get('artist_genres', [])
+    else:
+        track = track_data
+        audio_features = track_data.get('audio_features', {})
+        artist_genres = track_data.get('artist_genres', [])
+    
+    artist_names = [artist['name'] for artist in track['artists']]
+    song_name = track.get('name', 'Unknown Song')
+    track_id = track.get('id', 'Unknown ID')
+    duration_ms = track.get('duration_ms', 0)
+    release_date = track['album'].get('release_date', 'Unknown release date')
+    explicit = track.get('explicit', False)
+    popularity = track.get('popularity', 0)
+    
+    unpacked_audio_features = {
+        'danceability': audio_features.get('danceability', 0),
+        'energy': audio_features.get('energy', 0),
+        'key': audio_features.get('key', 0),
+        'loudness': audio_features.get('loudness', 0),
+        'mode': audio_features.get('mode', 0),
+        'speechiness': audio_features.get('speechiness', 0),
+        'acousticness': audio_features.get('acousticness', 0),
+        'instrumentalness': audio_features.get('instrumentalness', 0),
+        'liveness': audio_features.get('liveness', 0),
+        'valence': audio_features.get('valence', 0),
+        'tempo': audio_features.get('tempo', 0),
+        #'time_signature': audio_features.get('time_signature', 0),
+        'duration_ms': audio_features.get('duration_ms', 0)
+    }
+
+    return {
+        'artist_names': artist_names,
+        'song_name': song_name,
+        'track_id': track_id,
+        'release_date': release_date,
+        'duration_ms': duration_ms,
+        'genres': artist_genres,
+        'explicit': explicit,
+        'popularity': popularity,
+        **unpacked_audio_features
+    }
