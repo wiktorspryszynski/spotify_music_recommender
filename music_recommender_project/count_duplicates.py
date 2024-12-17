@@ -21,5 +21,6 @@ def count_duplicate_ids(file_path):
     except Exception as e:
         print(f"An error occurred: {e}")
 
-file_path = 'urls.txt'
-count_duplicate_ids(file_path)
+
+if __name__ == "__main__":
+    count_duplicate_ids('urls.txt')

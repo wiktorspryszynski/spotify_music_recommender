@@ -3,7 +3,6 @@ from dotenv import load_dotenv
 import os
 import base64
 from requests import post, get
-from urllib.parse import urlparse
 
 load_dotenv()
 
@@ -75,6 +74,21 @@ def get_songs_by_artist(token, artist_id):
     return None
 
 
+def get_several_songs_by_ids(token, users_market: str, song_ids: list[str]):
+    ids = ','.join(song_ids)
+    url = f'https://api.spotify.com/v1/tracks?'
+    if users_market:
+        url += f'market={users_market}&'
+    url += f'ids={ids}'
+        
+    headers = get_auth_header(token)
+
+    result = get(url=url, headers=headers)
+    if result.status_code == 200:
+        json_result = json.loads(result.content)
+        return json_result['tracks']
+    return None
+
 
 def get_current_users_top_tracks(token, limit: int = 20, time_range: str = "medium_term"):
     '''
@@ -131,9 +145,17 @@ def get_current_users_top_artists(token, limit: int = 20, time_range: str = "med
 
 def get_songs_audio_features(token, track_list: list[str]):
     """
+    IMPORTANT NOTE:
+    
+    As of december 2024, Spotify deprecated their audio features endpoint, rendering this app useless.
+    I am keeping the code responsible for handling audio features in case they revert the changes.
+    
+    As such, this function will most likely return None instead of audio_features.
+    
     Get several songs audio features, up to a 100 at a time\n
 
         :param track_list: list of ID's of songs to get audio features of
+        
     """
     ids = ','.join(track_list)
     url = f'https://api.spotify.com/v1/audio-features?ids={ids}'
@@ -146,7 +168,7 @@ def get_songs_audio_features(token, track_list: list[str]):
     return None
 
 def get_artist_by_id(token, artist_id: str):
-    """Fetch info about artist by using his/hers Spotify ID (ID can be obtained using get_artist_id() function)
+    """Fetch info about artist by Spotify ID (can be obtained using get_artist_id() function)
 
     Args:
         token : self explanatory
@@ -175,7 +197,7 @@ def get_several_artists_by_id(token, artists_id: list[str]):
     Returns:
         JSON object with artist's info (including genres!)
     """
-    ids = ",".join(artists_id)    # comma separeated artists id's
+    ids = ",".join(artists_id)
     url = f'https://api.spotify.com/v1/artists/?ids={ids}'
     headers = get_auth_header(token)
 
@@ -245,3 +267,38 @@ def get_relevant_track_info(track_data):
         'popularity': popularity,
         **unpacked_audio_features
     }
+    
+    
+def get_artists_genres_batch(access_token, artist_ids):
+        if not artist_ids:
+            return {}
+
+        artist_genres_map = {}
+        
+        # Split artist_ids into batches of 50 (limit per API request)
+        for i in range(0, len(artist_ids), 50):
+            batch_ids = artist_ids[i:i + 50]
+            artists_data = get_several_artists_by_id(access_token, batch_ids)
+
+            for artist in artists_data:
+                artist_genres_map[artist['id']] = artist.get('genres', [])
+
+        return artist_genres_map
+
+def save_music_audio_features_to_file(enriched_tracks, file_name):
+    with open(file_name, "w") as f:
+        is_first_track = True
+        
+        for track in enriched_tracks:
+            track_info = get_relevant_track_info(track)
+            
+            if is_first_track:
+                f.write(';'.join([*track_info.keys()]))
+                f.write('\n')
+                is_first_track = False
+            
+            vals_to_write = []
+            for v in track_info.values():
+                vals_to_write.append(str(v))
+            f.write(str(';'.join(vals_to_write)))
+            f.write('\n')

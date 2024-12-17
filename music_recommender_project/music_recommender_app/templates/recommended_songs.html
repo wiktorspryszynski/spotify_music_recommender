@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify User Profile</title>
+        <link rel="stylesheet" href="{% static 'track_list_styles.css' %}">
+    </head>
+    <body>
+        <div class="welcome-user">
+            <h1>
+                <a href="{{user_profile.external_urls.spotify}}">{{ user_profile.display_name }}</a>, oto twoje polecane piosenki
+                {% comment %} <br>Running time: {{ running_time }}s. {% endcomment %}
+            </h1>
+        </div>
+
+        <div class="main">
+            <div id="recommended_songs_list" class="tracks-list">
+                {% comment %} <img src="{% url 'plot_user_music_data' %}" alt="User Music Data Plot"> {% endcomment %}
+                {% for song in tracks %}
+                    <a href={{ song.external_urls.spotify }} target="_blank">
+                        <div class="track-container">
+                            <img src="{{ song.album.images.0.url }}" alt="Track Image" class="track-image">
+                            <br><br>
+                            <div class="track-info">
+                                <div class="track-name">{{ song.name }}</div>
+                                <div class="track-artist">
+                                    {% for artist in song.artists %}
+                                        {{ artist.name }}&nbsp;&nbsp;
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>

@@ -5,13 +5,10 @@ from django.http import HttpResponse
 from django.template import loader
 import modules.spotify_functions as spotify_functions
 import modules.spotify_authorization as spotify_auth
-import matplotlib.pyplot as plt
-import base64, urllib
-
-import concurrent.futures
+from django.http import HttpResponse
 from asgiref.sync import sync_to_async
+import modules.recommendation as recommendation
 
-# Asynchronous Spotify callback function
 async def spotify_callback(request):
     sp_oauth = spotify_auth.SpotifyAuth(
         client_id=settings.SPOTIFY_CLIENT_ID,
@@ -52,15 +49,19 @@ async def spotify_callback(request):
     else:
         return redirect('spotify_login')
 
-import matplotlib.pyplot as plt
-import seaborn as sns
-import io
-from django.http import HttpResponse
-from collections import Counter
 
 def recommended_songs_site(request):
-    import time
-    start_time = time.time()
+    """
+    IMPORTANT NOTE:
+    
+    As of december 2024, Spotify deprecated their audio features endpoint, rendering this app useless.
+    I am keeping the code responsible for handling audio features in case they revert the changes.
+    
+    To not make this app a complete waste of time, I will be showcasing it further using my personal set of music tracks I tested the app with.
+    This means that this app will no longer get any recommendations based on user's music, as the app can't get the much needed audio features of user's top music tracks and
+    will instead showcase (what it would look like had it all worked out) recommendations based on my saved music data and it's audio features (demofile.txt in the root directory).
+    """
+    
     access_token = request.session.get('access_token')
 
     if access_token:
@@ -71,84 +72,58 @@ def recommended_songs_site(request):
         all_tracks = user_saved_tracks['items'] + user_top_tracks['items']
         tracks_ids = list(set([track["track"]["id"] if "track" in track else track["id"] for track in all_tracks]))
         user_tracks_audio_features = spotify_functions.get_songs_audio_features(token=access_token, track_list=tracks_ids)
-
-        audio_features_map = {audio['id']: audio for audio in user_tracks_audio_features if audio is not None}
-
-        enriched_tracks = []
-        artist_genres_cache = {}
+ 
+        context = {'user_profile': user_profile}
         
-        def get_artists_genres_batch(artist_ids):
-            if not artist_ids:
-                return {}
+        if user_tracks_audio_features:  # this will now return None as long as the audio_features endpoint is deprecated in the API
+            audio_features_map = {audio['id']: audio for audio in user_tracks_audio_features if audio is not None}
 
-            artist_genres_map = {}
+            enriched_tracks = []
+            artist_genres_cache = {}
             
-            # Split artist_ids into batches of 50 (limit per API request)
-            for i in range(0, len(artist_ids), 50):
-                batch_ids = artist_ids[i:i + 50]
-                artists_data = spotify_functions.get_several_artists_by_id(access_token, batch_ids)
-
-                for artist in artists_data:
-                    artist_genres_map[artist['id']] = artist.get('genres', [])
-
-            return artist_genres_map
-
-        all_artist_ids = set()
-        for track in all_tracks:
-            artists = track['track']['artists'] if 'track' in track else track['artists']
-            for artist in artists:
-                all_artist_ids.add(artist['id'])
-
-        artist_genres_cache.update(get_artists_genres_batch(list(all_artist_ids)))
-
-        for track in all_tracks:
-            track_id = track["track"]["id"] if "track" in track else track["id"]
-            if track_id in audio_features_map:
-                combined_data = {
-                    **track,
-                    'audio_features': audio_features_map[track_id]
-                }
-
+            all_artist_ids = set()
+            for track in all_tracks:
                 artists = track['track']['artists'] if 'track' in track else track['artists']
-                artist_genres_set = set()
-
                 for artist in artists:
-                    genres = artist_genres_cache.get(artist['id'], [])
-                    artist_genres_set.update(genres)
+                    all_artist_ids.add(artist['id'])
 
-                combined_data['artist_genres'] = list(artist_genres_set)
-                enriched_tracks.append(combined_data)
-             
-        with open("demofile.txt", "w") as f:
-            is_first_track = True
+            artist_genres_cache.update(spotify_functions.get_artists_genres_batch(access_token, list(all_artist_ids)))
+
+            for track in all_tracks:
+                track_id = track["track"]["id"] if "track" in track else track["id"]
+                if track_id in audio_features_map:
+                    combined_data = {
+                        **track,
+                        'audio_features': audio_features_map[track_id]
+                    }
+
+                    artists = track['track']['artists'] if 'track' in track else track['artists']
+                    artist_genres_set = set()
+
+                    for artist in artists:
+                        genres = artist_genres_cache.get(artist['id'], [])
+                        artist_genres_set.update(genres)
+
+                    combined_data['artist_genres'] = list(artist_genres_set)
+                    enriched_tracks.append(combined_data)
+                    
+                    # spotify_functions.save_music_audio_features_to_file(enriched_tracks, "demofile.txt")
+                    
+                    context['tracks'] = enriched_tracks
+                    
+        else: # get recommendations based on saved music data in demofile.txt
             
-            for track in enriched_tracks:
-                track_info = spotify_functions.get_relevant_track_info(track)
-                
-                if is_first_track:
-                    f.write(';'.join([*track_info.keys()]))
-                    f.write('\n')
-                    is_first_track = False
-                
-                vals_to_write = []
-                for v in track_info.values():
-                    vals_to_write.append(str(v))
-                f.write(str(';'.join(vals_to_write)))
-                f.write('\n')
-
-        running_time = round(time.time() - start_time, 2)
-        context = {
-            'user_profile': user_profile,
-            'tracks': enriched_tracks,
-            'running_time': running_time
-        }
-        return render(request, 'recommended_songs_site.html', context)
+            ids = recommendation.get_recommended_songs_ids('demofile')
+            print(user_profile['country'])
+            recommended_songs = spotify_functions.get_several_songs_by_ids(access_token, user_profile['country'], ids)
+            
+            context['tracks'] = recommended_songs
+            
+        return render(request, 'recommended_songs.html', context)
     else:
         return redirect('spotify_login')
 
 
-    
-    
 def spotify_login(request):
     sp_oauth = spotify_auth.SpotifyAuth(
         client_id=settings.SPOTIFY_CLIENT_ID,
