@@ -1,56 +1,3 @@
-# import pandas as pd
-# import ast
-# import os
-# import sys
-# import django
-# from django.core.exceptions import ValidationError
-
-# parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# sys.path.append(parent_dir)
-# os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'music_recommender_project.settings')
-
-# django.setup()
-
-# from music_recommender_app.models import MusicTrack
-
-# df = pd.read_csv('music_recommender_project\data\music_tracks_dataset.csv')
-
-# df['artists'] = df['artists'].apply(lambda x: ast.literal_eval(x))
-# df['genres'] = df['genres'].apply(lambda x: ast.literal_eval(x))
-# df['genres_limited'] = df['genres_limited'].apply(lambda x: ast.literal_eval(x))
-
-# for _, row in df.iterrows():
-#     if isinstance(row['artists'], list) and isinstance(row['genres'], list) and isinstance(row['genres_limited'], list):
-#         track = MusicTrack(
-#             valence=row['valence'],
-#             year=row['year'],
-#             acousticness=row['acousticness'],
-#             artists=row['artists'],
-#             danceability=row['danceability'],
-#             duration_ms=row['duration_ms'],
-#             energy=row['energy'],
-#             explicit=row['explicit'],
-#             track_id=row['id'],
-#             instrumentalness=row['instrumentalness'],
-#             key=row['key'],
-#             liveness=row['liveness'],
-#             loudness=row['loudness'],
-#             mode=row['mode'],
-#             name=row['name'],
-#             popularity=row['popularity'],
-#             speechiness=row['speechiness'],
-#             tempo=row['tempo'],
-#             first_artist=row['first_artist'],
-#             genres=row['genres'],
-#             genres_limited=row['genres_limited']
-#         )
-        
-#         track.save()
-#     else:
-#         raise ValidationError("Artists, genres and genres limited must be lists")
-            
-
-# print("Database populated successfully!")
 import pandas as pd
 import ast
 import os
@@ -75,7 +22,8 @@ class Command(BaseCommand):
             self.stdout.write(self.style.SUCCESS("Database is already populated. Skipping population."))
             return
 
-        df = pd.read_csv('music_recommender_project/data/music_tracks_dataset.csv')
+        # df = pd.read_csv('music_recommender_project/data/music_tracks_dataset.csv')
+        df = pd.read_csv('data/music_tracks_dataset.csv')
 
         df['artists'] = df['artists'].apply(lambda x: ast.literal_eval(x))
         df['genres'] = df['genres'].apply(lambda x: ast.literal_eval(x))
