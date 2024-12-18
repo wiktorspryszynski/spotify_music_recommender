@@ -302,3 +302,49 @@ def save_music_audio_features_to_file(enriched_tracks, file_name):
                 vals_to_write.append(str(v))
             f.write(str(';'.join(vals_to_write)))
             f.write('\n')
+
+
+def create_playlist(user_id, access_token):
+    url = f"https://api.spotify.com/v1/users/{user_id}/playlists"
+    headers = {
+        "Authorization": f"Bearer {access_token}",
+        "Content-Type": "application/json"
+    }
+    data = {
+        "name": "Moja polecana playlista :~)",
+        "description": "Playlista stworzona na podstawie twojego gustu muzycznego",
+        "public": False
+    }
+    
+    response = post(url, json=data, headers=headers)
+    
+    if response.status_code < 300:
+        playlist = response.json()
+        return playlist['id']
+    else:
+        print(f"Error creating playlist: {response.status_code} {response.json()}")
+        return None
+
+
+def add_songs_to_playlist(playlist_id, track_ids, access_token):
+    url = f"https://api.spotify.com/v1/playlists/{playlist_id}/tracks"
+    headers = {
+        "Authorization": f"Bearer {access_token}",
+        "Content-Type": "application/json"
+    }
+    
+    # Prepare the track URIs (prefix 'spotify:track:' to the track IDs)
+    track_uris = [f"spotify:track:{track_id}" for track_id in track_ids]
+    
+    data = {
+        "uris": track_uris
+    }
+    
+    response = post(url, json=data, headers=headers)
+    
+    if response.status_code == 201:
+        print("Songs added to playlist successfully")
+    else:
+        print(f"Error adding songs: {response.status_code}")
+    
+    return response.status_code

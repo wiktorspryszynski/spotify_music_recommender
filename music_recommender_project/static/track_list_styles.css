@@ -114,12 +114,10 @@ a {
     width: 100vw;
 }
 
-/* fixed button at the bottom of the page redirects to list of recommended songs */
 .fixed-button {
     position: fixed;
     bottom: 20px;
     right: 44vw;
-    background-color: #28a745; /* Green color */
     color: white;
     border: none;
     border-radius: 50px;
@@ -133,6 +131,19 @@ a {
     z-index: 1000; /* Ensures the button is on top of other content */    
 }
 
-.fixed-button:hover {
+.green {
+    background-color: #28a745; /* Green color */
+}
+
+.green:hover {
     background-color: #218838; /* Darker green on hover */
+}
+
+
+.red {
+    background-color: #7e4d4d;
+}
+
+.red:hover {
+    background-color: #5a3434;
 }

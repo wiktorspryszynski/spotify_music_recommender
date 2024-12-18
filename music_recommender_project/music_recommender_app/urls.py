@@ -7,6 +7,7 @@ urlpatterns = [
     path('music_recommender_app/', views.index, name="index"),
     path('music_recommender_app/spotify/login/', views.spotify_login, name='spotify_login'),
     path('music_recommender_app/spotify/callback/', views.spotify_callback, name='spotify_callback'),
-    path('music_recommender_app/spotify/callback/recommended_songs/', views.recommended_songs_site, name='recommended_songs'),
+    path('music_recommender_app/spotify/callback/recommended_songs/', views.recommended_songs_view, name='recommended_songs_view'),
+    path('music_recommender_app/spotify/callback/create_playlist/', views.create_playlist_view, name='create_playlist'),
     #path('music_recommender_app/track_list/', views.track_list, name='track_list'),
 ]

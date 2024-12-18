@@ -35,6 +35,22 @@
                     </a>
                 {% endfor %}
             </div>
+            {% if playlist_created is None %}
+                <form method="POST" action="{% url 'create_playlist' %}">
+                    {% csrf_token %}
+                    <button type="submit" class="fixed-button green">Stwórz playlistę</button>
+                </form>
+            {% elif playlist_created %}
+                <div class="fixed-button green">
+                    Playlista stworzona pomyślnie!
+                </div>
+            {% else %}
+                <form method="POST" action="{% url 'create_playlist' %}">
+                    {% csrf_token %}
+                    <button type="submit" class="fixed-button red">Coś poszło nie tak, spróbuj ponownie</button>
+                </form>
+            {% endif %}
+            
         </div>
     </body>
 </html>

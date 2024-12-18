@@ -8,13 +8,14 @@ import modules.spotify_authorization as spotify_auth
 from django.http import HttpResponse
 from asgiref.sync import sync_to_async
 import modules.recommendation as recommendation
+from django.urls import reverse
 
 async def spotify_callback(request):
     sp_oauth = spotify_auth.SpotifyAuth(
         client_id=settings.SPOTIFY_CLIENT_ID,
         client_secret=settings.SPOTIFY_CLIENT_SECRET,
         redirect_uri=settings.SPOTIFY_REDIRECT_URI,
-        scope=['user-library-read', 'user-read-private', 'user-read-email', 'user-top-read']
+        scope=['user-library-read', 'user-read-private', 'user-read-email', 'user-top-read', 'playlist-modify-public', 'playlist-modify-private']
     )
     code = request.GET.get('code')
     token_info = await sync_to_async(sp_oauth.get_access_token)(code=code)
@@ -50,7 +51,7 @@ async def spotify_callback(request):
         return redirect('spotify_login')
 
 
-def recommended_songs_site(request):
+def recommended_songs_view(request):
     """
     IMPORTANT NOTE:
     
@@ -63,7 +64,8 @@ def recommended_songs_site(request):
     """
     
     access_token = request.session.get('access_token')
-
+    playlist_created = request.session.get('playlist_created', None)
+    
     if access_token:
         user_profile = request.session.get('user_profile')
         user_saved_tracks = request.session.get('user_saved_tracks')
@@ -73,9 +75,12 @@ def recommended_songs_site(request):
         tracks_ids = list(set([track["track"]["id"] if "track" in track else track["id"] for track in all_tracks]))
         user_tracks_audio_features = spotify_functions.get_songs_audio_features(token=access_token, track_list=tracks_ids)
  
-        context = {'user_profile': user_profile}
+        context = {
+            'user_profile': user_profile,
+            'playlist_created': playlist_created,
+        }
         
-        if user_tracks_audio_features:  # this will now return None as long as the audio_features endpoint is deprecated in the API
+        if user_tracks_audio_features:  # this will be None as long as the audio_features endpoint is deprecated in the API
             audio_features_map = {audio['id']: audio for audio in user_tracks_audio_features if audio is not None}
 
             enriched_tracks = []
@@ -109,13 +114,13 @@ def recommended_songs_site(request):
                     
                     # spotify_functions.save_music_audio_features_to_file(enriched_tracks, "demofile.txt")
                     
+                    
                     context['tracks'] = enriched_tracks
                     
         else: # get recommendations based on saved music data in demofile.txt
-            
-            ids = recommendation.get_recommended_songs_ids('demofile')
-            print(user_profile['country'])
-            recommended_songs = spotify_functions.get_several_songs_by_ids(access_token, user_profile['country'], ids)
+            recommended_songs_ids = recommendation.get_recommended_songs_ids('demofile')
+            recommended_songs = spotify_functions.get_several_songs_by_ids(access_token, user_profile['country'], recommended_songs_ids)
+            request.session['recommended_songs_ids'] = recommended_songs_ids
             
             context['tracks'] = recommended_songs
             
@@ -124,12 +129,40 @@ def recommended_songs_site(request):
         return redirect('spotify_login')
 
 
+def create_playlist_view(request):
+    if request.method == "POST":
+        access_token = request.session.get('access_token')
+        
+        user_profile = request.session.get('user_profile')
+        user_id = user_profile["id"]
+        
+        if not access_token or not user_id:
+            return HttpResponse("User not authenticated", status=401)
+        
+        recommended_tracks_ids = request.session.get('recommended_songs_ids')
+        
+        if recommended_tracks_ids:
+            playlist_id = spotify_functions.create_playlist(user_id, access_token)
+            
+            if playlist_id:
+                spotify_functions.add_songs_to_playlist(playlist_id, recommended_tracks_ids, access_token)
+                request.session['playlist_created'] = True
+                del request.session['recommended_songs_ids']
+            else:
+                request.session['playlist_created'] = False
+        else:
+            request.session['playlist_created'] = False
+    
+    return redirect('recommended_songs_view')
+        
+
+
 def spotify_login(request):
     sp_oauth = spotify_auth.SpotifyAuth(
         client_id=settings.SPOTIFY_CLIENT_ID,
         client_secret=settings.SPOTIFY_CLIENT_SECRET,
         redirect_uri=settings.SPOTIFY_REDIRECT_URI,
-        scope=['user-library-read', 'user-read-private', 'user-read-email', 'user-top-read'],
+        scope=['user-library-read', 'user-read-private', 'user-read-email', 'user-top-read', 'playlist-modify-public', 'playlist-modify-private'],
         show_dialog=True
     )
     auth_url = sp_oauth.get_authorize_url()
@@ -138,6 +171,10 @@ def spotify_login(request):
 
 def index(request):
     template = loader.get_template('index.html')
+    
+    if 'playlist_created' in request.session.keys():
+        del request.session['playlist_created']
+    
     return HttpResponse(template.render())
 
 

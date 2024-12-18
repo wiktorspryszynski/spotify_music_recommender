@@ -58,33 +58,3 @@ body {
     background-color: #1c251d; /* Darker green on hover */
 }
 
-
-
-/* body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #070807;
-    color: white;
-}
-
-button {
-    background-color: #070807;
-    color: rgb(30, 215, 96);
-    padding: 15px 30px; 
-    border: none;
-    border-radius: 20px; 
-    font-size: 24px; 
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button>img {
-    transform: translate(0px, 7px);
-}
-
-button:hover {
-    background-color: #1c251d;
-} */
