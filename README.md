@@ -16,7 +16,7 @@ This means that this app will no longer get any recommendations based on user's 
 will instead showcase (what it would look like had it all worked out) recommendations based on my saved music data and it's audio features (demofile.txt in the root directory).
 
 ## YouTube Link
-If you want to see how the project works with saved tracks, you can see it [HERE](https://youtu.be/Jc-vJqKS7Ks).
+If you want to see how the project works with saved tracks, you can see it [HERE](https://youtu.be/mAMqMbb0Vek).
 
 ## To run:
 Make sure to have Python installed on your system, then type the following:
