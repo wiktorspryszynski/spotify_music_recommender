@@ -1,7 +1,5 @@
 # spotify_music_recommender
 
-### Please note that this project is still a WORK_IN_PROGRESS
-
 ## Introduction
 Spotify Music Recommender is an app that allows you to log in via your Spotify account, see your top tracks and get a (play)list of recommended songs that best suit your liking.
 
@@ -17,7 +15,8 @@ To not make this app a complete waste of time, I will be showcasing it further u
 This means that this app will no longer get any recommendations based on user's music, as the app can't get the much needed audio features of user's top music tracks and
 will instead showcase (what it would look like had it all worked out) recommendations based on my saved music data and it's audio features (demofile.txt in the root directory).
 
-
+## YouTube Link
+If you want to see how the project works with saved tracks, you can see it [HERE](https://youtu.be/Jc-vJqKS7Ks).
 
 ## To run:
 Make sure to have Python installed on your system, then type the following:
