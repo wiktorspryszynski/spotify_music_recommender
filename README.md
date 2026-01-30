@@ -34,18 +34,14 @@ You need to supply your own CLIENT_ID and CLIENT_SECRET, that you can find in yo
 Click [HERE](https://developer.spotify.com/dashboard) to make your own app using Spotify's API.
 
 
-## Technologies used
+## Tech stack
 
+### Used
 - Python
-    - Django
-    
-- Hopefully in the future
-    - Pyspark 
-    - TensorFlow
-    - Docker 
+- Django
 
-- Ditched
-    - Spotipy
+### Ditched
+- Spotipy
 
 ## Contributing
 
