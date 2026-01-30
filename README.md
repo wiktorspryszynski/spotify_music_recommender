@@ -1,4 +1,4 @@
-# spotify_music_recommender
+# Spotify music recommender (deprecated - see note below)
 
 ## Introduction
 Spotify Music Recommender is an app that allows you to log in via your Spotify account, see your top tracks and get a (play)list of recommended songs that best suit your liking.
