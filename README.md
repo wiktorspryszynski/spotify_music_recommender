@@ -25,7 +25,7 @@ Make sure to have Python installed on your system, then type the following:
 pip install -r requirements.txt
 cd music_recommender_project
 python manage.py migrate
-python manage.py populate_tracks
+python manage.py populate_tracks # this might take a while
 python manage.py runserver
 ```
 
