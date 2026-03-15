@@ -10,6 +10,28 @@ from music_recommender_app.models import MusicTrack
 class Command(BaseCommand):
     help = 'Populate the database with track data from a CSV file'
 
+    def _render_progress_bar(self, current, total, bar_width=40):
+        if total == 0:
+            return "\rProgress [----------------------------------------] 0.00% (0/0)"
+
+        percent = (current / total) * 100
+        filled = int((current / total) * bar_width)
+        empty = bar_width - filled
+
+        color = "\033[32m"  # green
+        # if percent < 34:
+        #     color = "\033[31m"  # red
+        # elif percent < 67:
+        #     color = "\033[33m"  # yellow
+        # else:
+        #     color = "\033[32m"  # green
+
+        reset = "\033[0m"
+        filled_bar = f"{color}{'█' * filled}{reset}"
+        empty_bar = ' ' * empty
+
+        return f"\rProgress [{filled_bar}{empty_bar}] {percent:6.2f}% ({current}/{total})"
+
     def handle(self, *args, **kwargs):
         # Set up Django environment
         parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -29,7 +51,15 @@ class Command(BaseCommand):
         df['genres'] = df['genres'].apply(lambda x: ast.literal_eval(x))
         df['genres_limited'] = df['genres_limited'].apply(lambda x: ast.literal_eval(x))
 
-        for _, row in df.iterrows():
+        total_rows = len(df)
+
+        for row_number, (_, row) in enumerate(df.iterrows(), start=1):
+            if row_number == 1 or row_number % 100 == 0 or row_number == total_rows:
+                self.stdout.write(
+                    self._render_progress_bar(row_number, total_rows),
+                    ending=""
+                )
+
             if isinstance(row['artists'], list) and isinstance(row['genres'], list) and isinstance(row['genres_limited'], list):
                 track = MusicTrack(
                     valence=row['valence'],
@@ -62,4 +92,5 @@ class Command(BaseCommand):
             else:
                 self.stdout.write(self.style.ERROR(f"Skipping track '{row['id']}': Artists, genres and genres limited must be lists"))
 
+        self.stdout.write("")
         self.stdout.write(self.style.SUCCESS("Database populated successfully!"))
