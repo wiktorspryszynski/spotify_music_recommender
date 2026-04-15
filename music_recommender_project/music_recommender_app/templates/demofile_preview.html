@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demofile.txt preview</title>
+    <link rel="stylesheet" href="{% static 'demofile_preview_styles.css' %}">
+</head>
+<body>
+    <main class="wrap">
+        <div class="topbar">
+            <h1>demofile.txt</h1>
+            <a class="back-link" href="{% url 'index' %}">Back to home</a>
+        </div>
+
+        <p class="meta">Rows: {{ row_count }} | Source: {{ demofile_path }}</p>
+
+        {% if columns and rows %}
+        <div class="table-shell">
+            <table>
+                <thead>
+                    <tr>
+                        {% for column in columns %}
+                        <th>{{ column }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in rows %}
+                    <tr>
+                        {% for value in row %}
+                        <td>{{ value }}</td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <p class="empty">demofile.txt was not found or has no data.</p>
+        {% endif %}
+    </main>
+</body>
+</html>

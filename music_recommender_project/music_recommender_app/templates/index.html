@@ -58,14 +58,21 @@
                         a project to recommend songs based on your Spotify data</br>
                         the application has access to your saved and most listened to songs</br>
                         based on them, using machine learning, the algorithm returns a (play)list of recommended songs
-                </p>
+                    </p>
                 </div>
             </div>
-            
 
-            <a class="main-button" href="/music_recommender_app/spotify/login/">
-                Zaloguj się przy użyciu <img src={% static 'Spotify_logo_big.png' %} alt="Spotify" height="35px">
-            </a>
+            <div class="button-row">
+                <a class="main-button spotify-btn" href="/music_recommender_app/spotify/login/">
+                    <img src={% static 'spotify-icon.png' %} alt="Spotify" height="35px"> Zaloguj się
+                </a>
+                <a class="main-button youtube-btn" href="https://www.youtube.com/watch?v=mAMqMbb0Vek" target="_blank" rel="noopener noreferrer">
+                    <img src={% static 'youtube-icon.svg' %} alt="YouTube" height="35px"> Obejrzyj demo
+                </a>
+                <a class="main-button demofile-btn" href="{% url 'demofile_preview' %}">
+                    <img src={% static 'textfile-icon.png' %} alt="txt" height="35px"> Zobacz demofile
+                </a>
+            </div>
         </div>
     </body>
 </html>

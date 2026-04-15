@@ -9,3 +9,5 @@ services:
       - .env
     environment:
       POPULATE_TRACKS: "0"
+    volumes:
+      - .:/app

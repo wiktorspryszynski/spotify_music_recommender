@@ -1,14 +1,15 @@
 # Create your views here.
+import csv
+from pathlib import Path
+
 from django.shortcuts import redirect, render
 from django.conf import settings
 from django.http import HttpResponse
 from django.template import loader
 import modules.spotify_functions as spotify_functions
 import modules.spotify_authorization as spotify_auth
-from django.http import HttpResponse
 from asgiref.sync import sync_to_async
 import modules.recommendation as recommendation
-from django.urls import reverse
 
 async def spotify_callback(request):
     sp_oauth = spotify_auth.SpotifyAuth(
@@ -190,3 +191,24 @@ def track_list(request):
     }
 
     return HttpResponse(template.render(context, request))
+
+
+def demofile_preview(request):
+    demofile_path = Path(settings.BASE_DIR) / 'data' / 'demofile.txt'
+    columns = []
+    rows = []
+
+    if demofile_path.exists():
+        with demofile_path.open('r', encoding='utf-8', newline='') as file:
+            reader = csv.reader(file, delimiter=';')
+            columns = next(reader, [])
+            rows = [row for row in reader]
+
+    context = {
+        'columns': columns,
+        'rows': rows,
+        'row_count': len(rows),
+        'demofile_path': demofile_path,
+    }
+
+    return render(request, 'demofile_preview.html', context)

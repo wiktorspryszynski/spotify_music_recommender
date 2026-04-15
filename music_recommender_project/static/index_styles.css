@@ -3,10 +3,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #070807;
     color: white;
     margin: 0;
+    padding: 28px 0;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -29,32 +30,79 @@ body {
     text-align: justify;
 }
 
+.dataset-preview {
+    margin-top: 24px;
+    width: 100%;
+}
+
+.dataset-preview h3 {
+    margin-bottom: 10px;
+}
+
+.dataset-preview pre {
+    margin: 0;
+    background: #121512;
+    border: 1px solid #2a322a;
+    border-radius: 12px;
+    padding: 14px;
+    white-space: pre-wrap;
+    word-break: break-word;
+    line-height: 1.35;
+    font-size: 12px;
+}
+
+.button-row {
+    display: flex;
+    gap: 14px;
+    margin-top: 32px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .main-button {
     display: inline-flex;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 40px;
     font-size: 16px;
     cursor: pointer;
     text-decoration: none;
     background-color: #070807;
-    color: rgb(30, 215, 96);
     padding: 10px 30px 15px;
     border: none;
-    border-radius: 20px; /* Rounded corners */
+    border-radius: 20px;
     font-size: 24px;
     font-weight: 500;
-    transition: background-color 0.3s ease; /* Smooth background color transition */
+    transition: background-color 0.3s ease;
     letter-spacing: -0.02em;
 }
 
-.main-button>img {
-    /* transform: translate(0px, 7px); */
+.spotify-btn { color: rgb(30, 215, 96); }
+.spotify-btn:hover { background-color: #1c251d; }
+
+.youtube-btn { color: rgb(255, 0, 0); }
+.youtube-btn:hover { background-color: #251f1c; }
+
+.demofile-btn { color: rgb(255, 255, 255); }
+.demofile-btn:hover { background-color: #2d2d2d; }
+
+.main-button > img {
     vertical-align: middle;
-    margin-left: 5px;
+    margin-right: 5px;
+    max-height: 25px;
 }
 
-.main-button:hover {
-    background-color: #1c251d; /* Darker green on hover */
-}
 
+@media (max-width: 900px) {
+    .text-row {
+        flex-direction: column;
+    }
+
+    .text-block {
+        margin: 0 0 12px;
+    }
+
+    .main-button {
+        font-size: 20px;
+    }
+}
