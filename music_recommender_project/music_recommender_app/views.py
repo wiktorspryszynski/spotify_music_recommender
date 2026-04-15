@@ -158,6 +158,10 @@ def create_playlist_view(request):
         
 
 
+def login_info(request):
+    return render(request, 'login_info.html')
+
+
 def spotify_login(request):
     sp_oauth = spotify_auth.SpotifyAuth(
         client_id=settings.SPOTIFY_CLIENT_ID,

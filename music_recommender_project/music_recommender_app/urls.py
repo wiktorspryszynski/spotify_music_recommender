@@ -6,6 +6,7 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('music_recommender_app/', views.index, name="index"),
     path('music_recommender_app/demofile/', views.demofile_preview, name='demofile_preview'),
+    path('music_recommender_app/spotify/login-info/', views.login_info, name='login_info'),
     path('music_recommender_app/spotify/login/', views.spotify_login, name='spotify_login'),
     path('music_recommender_app/spotify/callback/', views.spotify_callback, name='spotify_callback'),
     path('music_recommender_app/spotify/callback/recommended_songs/', views.recommended_songs_view, name='recommended_songs_view'),

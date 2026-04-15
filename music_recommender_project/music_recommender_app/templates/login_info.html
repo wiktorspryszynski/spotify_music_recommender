@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Logowanie — informacja</title>
+        <link rel="stylesheet" href="{% static 'index_styles.css' %}">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <div class="text-row">
+                <div class="text-block" id="polish">
+                    <h3>UWAGA — OGRANICZONY DOSTĘP</h3>
+                    <p>
+                        Ta aplikacja działa w <strong>trybie deweloperskim</strong> Spotify API.<br><br>
+                        Oznacza to, że logowanie przez OAuth jest możliwe wyłącznie dla kont
+                        jawnie dodanych do listy dozwolonych użytkowników w panelu Spotify Developers.<br><br>
+                        Tylko konto właściciela projektu jest uprawnione do zalogowania się.<br>
+                        Jeśli spróbujesz zalogować się na własne konto Spotify, Spotify odrzuci próbę autoryzacji.
+                    </p>
+                </div>
+
+                <div class="text-block" id="english">
+                    <h3>NOTE — RESTRICTED ACCESS</h3>
+                    <p>
+                        This application runs in Spotify API <strong>development mode</strong>.<br><br>
+                        This means that OAuth login is only available to accounts explicitly added
+                        to the allowlist in the Spotify Developer dashboard.<br><br>
+                        Only the project owner's account is authorized to log in.<br>
+                        If you try to log in with your own Spotify account, Spotify will reject the authorization attempt.
+                    </p>
+                </div>
+            </div>
+
+            <div class="button-row">
+                <a class="main-button spotify-btn" href="/music_recommender_app/spotify/login/">
+                    <img src="{% static 'spotify-icon.png' %}" alt="Spotify" height="35px"> Kontynuuj / Continue
+                </a>
+                <a class="main-button demofile-btn" href="/">
+                    &larr; Wróć / Go back
+                </a>
+            </div>
+        </div>
+    </body>
+</html>
