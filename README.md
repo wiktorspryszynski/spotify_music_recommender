@@ -29,6 +29,25 @@ python manage.py populate_tracks # this might take a while
 python manage.py runserver
 ```
 
+## To run with Docker
+Make sure Docker is installed, then from the repository root run:
+
+```bash
+cp .env.example .env
+docker compose up --build
+```
+
+The app will be available at `http://127.0.0.1:3001`.
+
+If your `.env` values contain `$` (common in generated Django secrets), escape each `$` as `$$` for Docker Compose parsing.
+
+By default, Docker startup runs `migrate` and starts the server.
+If you also want to seed tracks on startup, set `POPULATE_TRACKS=1` in `docker-compose.yml` (or export it in your shell) before running:
+
+```bash
+docker compose up --build
+```
+
 Please note that this is a work-in-progress project and I don't make my client credentials public.
 You need to supply your own CLIENT_ID and CLIENT_SECRET, that you can find in your Spotify's API Dashboard supplied after creating your own app.
 Click [HERE](https://developer.spotify.com/dashboard) to make your own app using Spotify's API.
