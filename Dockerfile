@@ -17,4 +17,4 @@ RUN chmod +x /app/docker-entrypoint.sh
 EXPOSE 3001
 
 ENTRYPOINT ["/app/docker-entrypoint.sh"]
-CMD ["python", "manage.py", "runserver", "0.0.0.0:3001"]
+CMD ["gunicorn", "music_recommender_project.wsgi:application", "--bind", "0.0.0.0:3001", "--workers", "3"]
