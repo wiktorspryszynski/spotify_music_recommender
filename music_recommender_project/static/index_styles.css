@@ -86,6 +86,9 @@ body {
 .demofile-btn { color: rgb(255, 255, 255); }
 .demofile-btn:hover { background-color: #2d2d2d; }
 
+.github-btn { color: rgb(255, 255, 255); }
+.github-btn:hover { background-color: #1f2230; }
+
 .main-button > img {
     vertical-align: middle;
     margin-right: 5px;
