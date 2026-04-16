@@ -36,20 +36,78 @@
                 {% endfor %}
             </div>
             {% if playlist_created is None %}
-                <form method="POST" action="{% url 'create_playlist' %}">
+                <form method="POST" action="{% url 'create_playlist' %}" id="playlist-form">
                     {% csrf_token %}
-                    <button type="submit" class="fixed-button green">Stwórz playlistę</button>
+                    <button type="submit" class="fixed-button green" id="playlist-btn">Stwórz playlistę</button>
                 </form>
             {% elif playlist_created %}
-                <div class="fixed-button green">
+                <div class="fixed-button green disabled-button">
                     Playlista stworzona pomyślnie!
                 </div>
             {% else %}
-                <form method="POST" action="{% url 'create_playlist' %}">
+                <form method="POST" action="{% url 'create_playlist' %}" id="playlist-form">
                     {% csrf_token %}
-                    <button type="submit" class="fixed-button red">Coś poszło nie tak, spróbuj ponownie</button>
+                    <button type="submit" class="fixed-button red" id="playlist-btn">Coś poszło nie tak, spróbuj ponownie</button>
                 </form>
             {% endif %}
+
+            <!-- Waiting overlay for playlist creation -->
+            <div id="playlist-overlay" style="display:none;">
+                <div class="playlist-overlay-inner">
+                    <div class="spinner-ring"></div>
+                    <p class="overlay-text">Tworzenie playlisty…</p>
+                </div>
+            </div>
+
+            <style>
+                .disabled-button {
+                    background-color: #1e6b35 !important;
+                    opacity: 0.55;
+                    cursor: default;
+                    pointer-events: none;
+                }
+                #playlist-overlay {
+                    position: fixed;
+                    inset: 0;
+                    background: rgba(15, 12, 12, 0.85);
+                    z-index: 2000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .playlist-overlay-inner {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 24px;
+                }
+                .spinner-ring {
+                    width: 64px;
+                    height: 64px;
+                    border: 5px solid #2a2424;
+                    border-top-color: #1db954;
+                    border-radius: 50%;
+                    animation: spin 0.9s linear infinite;
+                }
+                @keyframes spin {
+                    to { transform: rotate(360deg); }
+                }
+                .overlay-text {
+                    font-size: 22px;
+                    color: #fff;
+                    letter-spacing: 0.03em;
+                }
+            </style>
+
+            <script>
+                var form = document.getElementById('playlist-form');
+                if (form) {
+                    form.addEventListener('submit', function() {
+                        var overlay = document.getElementById('playlist-overlay');
+                        overlay.style.display = 'flex';
+                    });
+                }
+            </script>
             
         </div>
     </body>

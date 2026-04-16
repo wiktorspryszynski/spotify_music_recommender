@@ -54,6 +54,107 @@
                 {% endfor %}
             </div>
         </div>
-        <a href="/music_recommender_app/spotify/callback/recommended_songs" class="fixed-button green">Sprawdź polecane piosenki</a>
+        <a href="/music_recommender_app/spotify/callback/recommended_songs" class="fixed-button green" id="recommend-btn">Sprawdź polecane piosenki</a>
+
+        <!-- Skeleton loading overlay -->
+        <div id="skeleton-overlay" style="display:none;">
+            <div class="skeleton-header">
+                <div class="skeleton-line skeleton-title"></div>
+            </div>
+            <div class="skeleton-list">
+                {% for i in "1234567890" %}
+                <div class="skeleton-track">
+                    <div class="skeleton-img skeleton-pulse"></div>
+                    <div class="skeleton-info">
+                        <div class="skeleton-line skeleton-pulse" style="width:55%;height:16px;margin-bottom:8px;"></div>
+                        <div class="skeleton-line skeleton-pulse" style="width:35%;height:12px;"></div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="skeleton-spinner">
+                <div class="spinner-ring"></div>
+            </div>
+        </div>
+
+        <style>
+            #skeleton-overlay {
+                position: fixed;
+                inset: 0;
+                background: #0f0c0c;
+                z-index: 2000;
+                overflow-y: auto;
+                padding: 60px 140px 40px;
+            }
+            .skeleton-header {
+                margin-bottom: 60px;
+            }
+            .skeleton-title {
+                width: 480px;
+                height: 44px;
+                border-radius: 8px;
+            }
+            .skeleton-list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                max-width: 800px;
+            }
+            .skeleton-track {
+                display: flex;
+                align-items: center;
+                padding: 10px 10px 10px 20px;
+                border-radius: 8px;
+                background: #161212;
+            }
+            .skeleton-img {
+                width: 60px;
+                height: 60px;
+                border-radius: 4px;
+                flex-shrink: 0;
+                margin-right: 15px;
+            }
+            .skeleton-info {
+                flex: 1;
+            }
+            .skeleton-line {
+                background: #2a2424;
+                border-radius: 4px;
+            }
+            @keyframes skeleton-shimmer {
+                0%   { opacity: 0.5; }
+                50%  { opacity: 1; }
+                100% { opacity: 0.5; }
+            }
+            .skeleton-pulse {
+                background: #2a2424;
+                animation: skeleton-shimmer 1.4s ease-in-out infinite;
+            }
+            .skeleton-img.skeleton-pulse {
+                animation-delay: 0s;
+            }
+            .skeleton-spinner {
+                display: flex;
+                justify-content: center;
+                margin-top: 48px;
+            }
+            .spinner-ring {
+                width: 48px;
+                height: 48px;
+                border: 4px solid #2a2424;
+                border-top-color: #1db954;
+                border-radius: 50%;
+                animation: spin 0.9s linear infinite;
+            }
+            @keyframes spin {
+                to { transform: rotate(360deg); }
+            }
+        </style>
+
+        <script>
+            document.getElementById('recommend-btn').addEventListener('click', function(e) {
+                document.getElementById('skeleton-overlay').style.display = 'block';
+            });
+        </script>
     </body>
 </html>
