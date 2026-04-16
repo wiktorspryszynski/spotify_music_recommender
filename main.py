@@ -15,6 +15,9 @@ client_secret = os.getenv("CLIENT_SECRET")
 
 
 def get_token():
+    if (not client_id) or (not client_secret):
+        raise Exception("You must set CLIENT_ID and CLIENT_SECRET environment variables")
+    
     auth_token = client_id + ":" + client_secret
     auth_bytes = auth_token.encode("utf-8")
     auth_base64 = str(base64.b64encode(auth_bytes), "utf-8")
@@ -70,12 +73,12 @@ def get_songs_by_artist(token, artist_id):
     return json_result["tracks"]
 
 
-if __name__ == '__main__':
-    token = get_token()
+# if __name__ == '__main__':
+#     token = get_token()
 
-    trav_id = get_artist_id(token, "Travis scott")
-    songs = get_songs_by_artist(token, trav_id)
+#     trav_id = get_artist_id(token, "Travis scott")
+#     songs = get_songs_by_artist(token, trav_id)
 
-    for x in songs:
-        print(x["album"])
-        print('\n\n')
+#     for x in songs:
+#         print(x["album"])
+#         print('\n\n')
