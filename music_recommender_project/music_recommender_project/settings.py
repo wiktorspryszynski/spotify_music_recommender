@@ -19,12 +19,11 @@ load_dotenv()
 
 SPOTIFY_CLIENT_ID = os.getenv("CLIENT_ID")
 SPOTIFY_CLIENT_SECRET = os.getenv("CLIENT_SECRET")
-SPOTIFY_REDIRECT_URI = 'http://127.0.0.1:3001/music_recommender_app/spotify/callback/'
+SPOTIFY_REDIRECT_URI = os.getenv("SPOTIFY_REDIRECT_URI")
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/dev/howto/deployment/checklist/
@@ -33,13 +32,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv("DJANGO_SECRET")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
-
+DEBUG = os.getenv("DEBUG", "False") == "True"
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",")
 
 # Application definition
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
