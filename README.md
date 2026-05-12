@@ -6,10 +6,14 @@ Spotify Music Recommender is an app that allows you to log in via your Spotify a
 The recommendation algorithm will use machine learning and a csv file loaded with music.
 In the future there might also appear a little section with analysis of your music taste, most listened to artists, genres etc., as I am fond of data analysis.
 
+> [!NOTE]
+> To learn more about the model used, please visit [it's GitHub repo](https://github.com/wiktorspryszynski/music_recommender_model).
+
 ## IMPORTANT NOTE
-    
-As of december 2024, Spotify deprecated their [audio features endpoint](https://developer.spotify.com/documentation/web-api/reference/get-audio-features), rendering this app useless.
-I am keeping the code responsible for handling audio features in case they revert the changes.
+
+> [!WARNING]
+> As of december 2024, Spotify deprecated their [audio features endpoint](https://developer.spotify.com/documentation/web-api/reference/get-audio-features), rendering this app useless.
+> I am keeping the code responsible for handling audio features in case they revert the changes.
 
 To not make this app a complete waste of time, I will be showcasing it further using my personal set of music tracks I tested the app with.
 This means that this app will no longer get any recommendations based on user's music, as the app can't get the much needed audio features of user's top music tracks and
